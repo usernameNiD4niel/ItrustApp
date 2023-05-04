@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/_25sdp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/starla"
+            android:layout_gravity="center"
+            android:contentDescription="@string/starla"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/popUpDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_100"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:text="@string/select_an_action_you_want_to_perform_to_your_selected_item"
+            android:fontFamily="monospace"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_100"/>
+
+        <Button
+            android:id="@+id/saveAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_starla_answer"
+            android:paddingVertical="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_13ssp"
+            android:background="@drawable/pop_up_tool_tip_background"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_100"/>
+
+        <Button
+            android:id="@+id/cantUnderstand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i_can_t_understand"
+            android:paddingVertical="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_color"
+            android:textSize="@dimen/_13ssp"
+            android:background="@drawable/pop_up_tool_tip_background"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

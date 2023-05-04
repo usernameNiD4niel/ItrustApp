@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    android:fillViewport="true"
+    tools:context=".adminform.activities.SideBAddFormFP">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/black_100"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/back_button"
+            android:id="@+id/back_button_add_form_fp_side_b"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/back_button_add_form_fp_side_b"
+            android:text="@string/add_form_fp"
+            android:id="@+id/add_form_header_fp_side_b"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/back_button_add_form_fp_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/back_button_add_form_fp_side_b"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/side_b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/add_form_header_fp_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/back_button_add_form_fp_side_b"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/inner_container_side_b"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/add_form_header_fp_side_b">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dov_side_b"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="@string/date_of_visit_mm_dd_yyyy">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black_100"
+                    android:id="@+id/dov_text_side_b"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/medical_findings_side_b"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="@+id/dov_side_b"
+                app:layout_constraintEnd_toEndOf="@+id/dov_side_b"
+                app:layout_constraintTop_toBottomOf="@+id/dov_side_b"
+                android:layout_height="wrap_content"
+                android:hint="@string/medical_findings_medical_observation_complaints_complication_service_rendered_procedures_laboratory_examinations">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:id="@+id/medical_findings_text_side_b"
+                    android:scrollbarStyle="insideInset"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/method_accepted_side_b"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/medical_findings_side_b"
+                app:layout_constraintStart_toStartOf="@+id/medical_findings_side_b"
+                app:layout_constraintEnd_toEndOf="@+id/medical_findings_side_b"
+                android:layout_height="wrap_content"
+                android:hint="@string/method_accepted">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black_100"
+                    android:id="@+id/method_accepted_text_side_b"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nosp_side_b"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/method_accepted_side_b"
+                app:layout_constraintStart_toStartOf="@+id/method_accepted_side_b"
+                app:layout_constraintEnd_toEndOf="@+id/method_accepted_side_b"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_of_service_provider">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black_100"
+                    android:id="@+id/nosp_text_side_b"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dofuv_side_b"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/nosp_side_b"
+                app:layout_constraintStart_toStartOf="@+id/nosp_side_b"
+                app:layout_constraintEnd_toEndOf="@+id/nosp_side_b"
+                android:layout_height="wrap_content"
+                android:hint="@string/date_of_follow_up_visit_mm_dd_yyyy">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black_100"
+                    android:id="@+id/dofuv_text_side_b"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_2sdp"
+            app:layout_constraintStart_toStartOf="@+id/inner_container_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/inner_container_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/inner_container_side_b"
+            android:background="@color/black_100"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/divider_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/divider_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/divider_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/divider_side_b"
+            android:text="@string/how_to_be_reasonably_sure_a_client_is_not_pregnant"
+            android:textStyle="bold"
+            android:textColor="@color/black_100"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/question_parent_label_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/no_prompt"
+            app:layout_constraintTop_toBottomOf="@+id/question_parent_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/question_parent_label_side_b"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/question_one_no_side_b"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/yes"
+            app:layout_constraintTop_toTopOf="@+id/question_one_no_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_one_no_side_b"
+            app:layout_constraintEnd_toStartOf="@+id/question_one_no_side_b"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:id="@+id/question_one_yes_side_b"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_did_you_have_a_baby_less_than_six_6_months_ago_are_you_fully_or_nearly_fully_breastfeeding_and_have_you_had_no_menstrual_period_since_then"
+            app:layout_constraintEnd_toStartOf="@+id/question_one_yes_side_b"
+            app:layout_constraintStart_toStartOf="@+id/question_parent_label_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_one_yes_side_b"
+            android:textColor="@color/black_100"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_one_label_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/question_one_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/question_one_label_side_b"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/question_one_label_side_b"
+            android:text="@string/have_you_abstained_from_sexual_intercourse_since_your_last_menstrual_period_or_delivery"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:id="@+id/question_two_label_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_two_label_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_two_label_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_two_label_side_b"
+            android:text="@string/yes"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_two_yes_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_two_yes_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_two_yes_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_two_yes_side_b"
+            android:text="@string/no_prompt"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_two_no_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/question_two_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/question_two_label_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/question_two_label_side_b"
+            android:text="@string/_3_have_you_had_a_baby_in_the_last_four_4_weeks"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/question_three_label_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_three_label_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_three_label_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_three_label_side_b"
+            android:text="@string/yes"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_three_yes_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_three_yes_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_three_yes_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_three_yes_side_b"
+            android:text="@string/no_prompt"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_three_no_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/question_three_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/question_three_label_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/question_three_label_side_b"
+            android:text="@string/_4_did_your_last_menstrual_period_start_within_the_past_seven_7_days"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/question_four_label_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_four_label_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_four_label_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_four_label_side_b"
+            android:text="@string/yes"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_four_yes_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_four_yes_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_four_yes_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_four_yes_side_b"
+            android:text="@string/no_prompt"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_four_no_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/question_four_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/question_four_label_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/question_four_label_side_b"
+            android:text="@string/_5_have_you_had_a_miscarriage_or_abortion_in_the_last_seven_7_days"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/question_five_label_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_five_label_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_five_label_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_five_label_side_b"
+            android:text="@string/yes"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_five_yes_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_five_yes_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_five_yes_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_five_yes_side_b"
+            android:text="@string/no_prompt"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_five_no_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/question_five_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/question_five_label_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/question_five_label_side_b"
+            android:text="@string/_6_have_you_been_using_a_reliable_contraceptive_method_consistency_and_correctly"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/question_six_label_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_six_label_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_six_label_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_six_label_side_b"
+            android:text="@string/yes"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_six_yes_side_b"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toEndOf="@+id/question_six_yes_side_b"
+            app:layout_constraintTop_toTopOf="@+id/question_six_yes_side_b"
+            app:layout_constraintBottom_toBottomOf="@+id/question_six_yes_side_b"
+            android:text="@string/no_prompt"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/question_six_no_side_b"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_2sdp"
+            app:layout_constraintStart_toStartOf="@+id/inner_container_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/question_six_label_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/inner_container_side_b"
+            android:background="@color/black_100"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/divider_side_b_2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/divider_side_b_2"
+            app:layout_constraintEnd_toEndOf="@+id/divider_side_b_2"
+            app:layout_constraintTop_toBottomOf="@+id/divider_side_b_2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/if_the_client_answered_yes_to_at_least_one_of_the_questions_and_she_is_free_of_signs_or_symptoms_of_pregnancy_provide_client_with_desired_method"
+            android:id="@+id/notes_one_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/notes_one_side_b"
+            app:layout_constraintEnd_toEndOf="@+id/notes_one_side_b"
+            app:layout_constraintTop_toBottomOf="@+id/notes_one_side_b"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/if_the_client_answered_no_to_all_of_the_questions_pregnancy_cannot_be_ruled_out_the_client_should_await_menses_or_use_a_pregnancy_test"
+            android:id="@+id/notes_two_side_b"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/divider_side_b_2"
+            app:layout_constraintEnd_toEndOf="@id/divider_side_b_2"
+            app:layout_constraintTop_toBottomOf="@id/notes_two_side_b"
+            android:textAllCaps="false"
+            android:text="@string/add_records"
+            android:textColor="@color/background__"
+            android:background="@color/main_color"
+            android:id="@+id/add_records_side_b"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/light_border"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:padding="@dimen/_10sdp"
+    android:soundEffectsEnabled="true"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_12ssp"
+        android:text="@string/client_name"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/client_name_label_prenatal_care_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/client_name_label_prenatal_care_item"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/client_name_label_prenatal_care_item"
+        app:layout_constraintStart_toEndOf="@+id/client_name_label_prenatal_care_item"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/client_name_text_prenatal_care_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/client_name_label_prenatal_care_item"
+        app:layout_constraintStart_toStartOf="@+id/client_name_label_prenatal_care_item"
+        android:text="@string/date_registered"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/date_added_label_prenatal_care_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/date_added_label_prenatal_care_item"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/date_added_label_prenatal_care_item"
+        app:layout_constraintStart_toEndOf="@+id/date_added_label_prenatal_care_item"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/date_added_text_prenatal_care_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/date_added_label_prenatal_care_item"
+        app:layout_constraintStart_toStartOf="@+id/date_added_label_prenatal_care_item"
+        android:text="@string/time_registered"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/time_added_label_prenatal_care_item"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/time_added_label_prenatal_care_item"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/time_added_label_prenatal_care_item"
+        app:layout_constraintStart_toEndOf="@+id/time_added_label_prenatal_care_item"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/time_added_text_prenatal_care_item"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

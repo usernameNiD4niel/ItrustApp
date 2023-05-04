@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medicine_inventory.admin.UpdateInventoryMedicine">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/overview_textview_inventory_medicine_activity_update"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/update_line_1_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/overview_textview_inventory_medicine_activity_update"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/overview_textview_inventory_medicine_activity_update"
+            app:layout_constraintBottom_toBottomOf="@+id/overview_textview_inventory_medicine_activity_update"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_text"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/add_textview_inventory_medicine_activity_update"
+            app:layout_constraintStart_toEndOf="@+id/update_line_1_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/update_line_1_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/update_line_1_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/update_line_2_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/add_textview_inventory_medicine_activity_update"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/add_textview_inventory_medicine_activity_update"
+            app:layout_constraintBottom_toBottomOf="@+id/add_textview_inventory_medicine_activity_update"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/update_textview_inventory_medicine_activity_update"
+            app:layout_constraintStart_toEndOf="@+id/update_line_2_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/update_line_2_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/update_line_2_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/update_line_3_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/update_textview_inventory_medicine_activity_update"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/update_textview_inventory_medicine_activity_update"
+            app:layout_constraintBottom_toBottomOf="@+id/update_textview_inventory_medicine_activity_update"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/remove_textview_inventory_medicine_activity_update"
+            app:layout_constraintStart_toEndOf="@+id/update_line_3_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/update_line_3_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/update_line_3_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/update_line_4_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/remove_textview_inventory_medicine_activity_update"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/remove_textview_inventory_medicine_activity_update"
+            app:layout_constraintBottom_toBottomOf="@+id/remove_textview_inventory_medicine_activity_update"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/received_textview_inventory_medicine_activity_update"
+            app:layout_constraintStart_toEndOf="@+id/update_line_4_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/update_line_4_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/update_line_4_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/received_textview_inventory_medicine_activity_update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/medicine_name_update_inventory_medicine"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:labelFor="@+id/medicines_text_receive_inventory_medicine"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medicines">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:id="@+id/medicine_name_text_update_inventory_medicine"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/stock_update_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/medicine_name_update_inventory_medicine"
+                app:layout_constraintStart_toStartOf="@+id/medicine_name_update_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/medicine_name_update_inventory_medicine"
+                android:hint="@string/stock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description_update_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/stock_update_inventory_medicine"
+                app:layout_constraintStart_toStartOf="@+id/stock_update_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/stock_update_inventory_medicine"
+                android:layout_height="wrap_content"
+                android:hint="@string/description_optional">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/wtu_update_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/description_update_inventory_medicine"
+                app:layout_constraintStart_toStartOf="@+id/description_update_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/description_update_inventory_medicine"
+                android:layout_height="wrap_content"
+                android:hint="@string/when_to_use_optional">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/htu_update_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/wtu_update_inventory_medicine"
+                app:layout_constraintStart_toStartOf="@+id/wtu_update_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/wtu_update_inventory_medicine"
+                android:layout_height="wrap_content"
+                android:hint="@string/how_to_use_optional">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/htu_update_inventory_medicine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_medicine"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:id="@+id/update_medicine_button_update_inventory_medicine"
+                    android:backgroundTint="@color/main_color"
+                    android:textColor="@color/background__"
+                    android:paddingVertical="@dimen/_15sdp"/>
+
+                <ProgressBar
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:id="@+id/progress_bar_update_inventory_medicine"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:indeterminateTint="@color/main_color"/>
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

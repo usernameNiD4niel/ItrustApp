@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminVideoRecommendation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/videoRecommendationHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/video_recommendation"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"/>
+
+        <LinearLayout
+            android:id="@+id/adminVideoRecommendationLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@+id/videoRecommendationHeaderText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/video_date_posted_recommendation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/date_today">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:id="@+id/video_date_posted_recommendation_text"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:labelFor="@+id/video_categories_recommendation_text"
+                    android:id="@+id/video_categories_recommendation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/categories">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_medium"
+                        android:inputType="none"
+                        android:id="@+id/video_categories_recommendation_text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/video_title_recommendation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/video_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:id="@+id/video_title_recommendation_text"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionVideoRecommendation"
+                android:layout_marginBottom="@dimen/_5sdp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/video_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:id="@+id/description_video_text"
+                    android:gravity="top"
+                    android:textStyle="bold"
+                    android:overScrollMode="always"
+                    android:textColor="@color/main_color"
+                    android:fontFamily="@font/poppins_medium"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ytLinkVideoRecommendation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/yt_link">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:id="@+id/yt_link_video_recommendation_text"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="textUri"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/recommendVideoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/normal_state_btn_rounded"
+            android:text="@string/recommend_video"
+            app:layout_constraintTop_toBottomOf="@+id/adminVideoRecommendationLL"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="#fff" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

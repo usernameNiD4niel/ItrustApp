@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background__"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/family_planning"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:id="@+id/family_planning_label_fp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/family_planning_label_fp"
+        app:layout_constraintStart_toStartOf="@+id/family_planning_label_fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/fp_summary_records"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"
+        android:id="@+id/fp_summary_records_label_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fp_summary_records_label_fp"
+        android:text="@string/_14_records"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/fp_header_records_fp"
+        android:textColor="@color/secondary_text__"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

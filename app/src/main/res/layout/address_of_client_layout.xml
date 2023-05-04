@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/address"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/address_label_add_form_fp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address_field_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/address_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/address_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/address_label_add_form_fp"
+        android:hint="@string/no_street_barangay_municipality_province">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/address_field_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact_number_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/address_field_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/address_field_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/address_field_label_add_form_fp"
+        android:hint="@string/contact_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:id="@+id/contact_number_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/civil_status_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contact_number_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/contact_number_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/contact_number_label_add_form_fp"
+        android:hint="@string/civil_status">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/civil_status_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/religion_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/civil_status_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/civil_status_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/civil_status_label_add_form_fp"
+        android:hint="@string/religion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/religion_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/religion_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/name_of_spouse"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/name_of_spouse_label_add_form_fp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ln_spouse_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/name_of_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/name_of_spouse_label_add_form_fp"
+        android:hint="@string/last_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/ln_spouse_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/gn_spouse_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ln_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/ln_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/ln_spouse_label_add_form_fp"
+        android:hint="@string/given_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/gn_spouse_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mi_spouse_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gn_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/gn_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/gn_spouse_label_add_form_fp"
+        android:hint="@string/mi">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/mi_spouse_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact_spouse_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mi_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/mi_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/mi_spouse_label_add_form_fp"
+        android:hint="@string/contact_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:id="@+id/contact_spouse_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/civil_spouse_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contact_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/contact_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/contact_spouse_label_add_form_fp"
+        android:hint="@string/civil_status">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/civil_spouse_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/religion_spouse_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/civil_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/civil_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/civil_spouse_label_add_form_fp"
+        android:hint="@string/religion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/religion_spouse_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nolc_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/religion_spouse_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/religion_spouse_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/religion_spouse_label_add_form_fp"
+        android:hint="@string/number_of_living_children">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/nolc_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plan_to_have_more_children"
+        app:layout_constraintTop_toBottomOf="@+id/nolc_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/nolc_label_add_form_fp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="@dimen/_3sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/pthmc_label_add_form_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/pthmc_label_add_form_fp"
+        app:layout_constraintTop_toTopOf="@+id/pthmc_label_add_form_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/pthmc_label_add_form_fp"
+        android:text="@string/yes"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/pthmc_yes_add_form_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/pthmc_yes_add_form_fp"
+        app:layout_constraintTop_toTopOf="@+id/pthmc_yes_add_form_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/pthmc_yes_add_form_fp"
+        android:text="@string/no_prompt"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/pthmc_no_add_form_fp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ami_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pthmc_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/pthmc_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/pthmc_label_add_form_fp"
+        android:hint="@string/average_monthly_income">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/amic_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/family_planning_client_assessment_record"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_13ssp"
+        android:id="@+id/fpcar_label_add__form_fp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fp_content_text_add_form_fp"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@+id/fpcar_label_add__form_fp"
+        app:layout_constraintStart_toStartOf="@+id/fpcar_label_add__form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/fpcar_label_add__form_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/instruction_for_physicians_nurses_and_midwives"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/fp_content_text_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/fp_content_text_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/fp_content_text_add_form_fp"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/main_color"
+            android:id="@+id/progress_bar_existing_patient_add_records"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:labelFor="@+id/existing_patient_drop_down_add_record"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/patient_drop_down_parent_add_records"
+            android:layout_height="wrap_content"
+            android:hint="@string/patient_names">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:id="@+id/existing_patient_drop_down_add_record"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

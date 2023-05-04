@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_container_add_form"
+    android:background="@color/background__"
+    tools:context=".adminform.activities.AddFormFP">
+
+    <ImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="@color/black_100"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/back_button"
+        android:id="@+id/back_button_add_form_fp_"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/back_button_add_form_fp_"
+        android:text="@string/add_form_fp"
+        android:id="@+id/add_form_header_fp_"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_button_add_form_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button_add_form_fp_"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/side_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/add_form_header_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button_add_form_fp_"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_form_header_fp_"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:id="@+id/recycler_view_add_form_fp_"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:indeterminateTint="@color/main_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/progress_bar_add_form_fp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

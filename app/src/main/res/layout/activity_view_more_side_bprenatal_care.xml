@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".adminform.activities.ViewMoreSideBPrenatalCare">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/action_bar_side_b_pc">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/back_button_view_more_side_b"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/back_button_view_more_side_b"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:text="@string/side_b"
+            android:textColor="@color/background__"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/action_bar_side_b_pc"
+        app:layout_constraintEnd_toEndOf="@id/action_bar_side_b_pc"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_side_b_pc"
+        android:text="@string/abdominal_examination_findings"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/abdominal_examination_findings_label_side_b"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/card_1_pc_add_side_b"
+        app:layout_constraintTop_toBottomOf="@+id/abdominal_examination_findings_label_side_b"
+        app:layout_constraintStart_toStartOf="@+id/abdominal_examination_findings_label_side_b"
+        app:layout_constraintEnd_toEndOf="@+id/abdominal_examination_findings_label_side_b"
+        android:text="@string/trimester_abdominal_examination"
+        android:background="@drawable/light_border"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_color"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/card_2_pc_add_side_b"
+        app:layout_constraintTop_toBottomOf="@+id/card_1_pc_add_side_b"
+        app:layout_constraintStart_toStartOf="@+id/card_1_pc_add_side_b"
+        app:layout_constraintEnd_toEndOf="@+id/card_1_pc_add_side_b"
+        android:text="@string/vital_signs"
+        android:background="@drawable/light_border"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_color"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/card_3_pc_add_side_b"
+        app:layout_constraintTop_toBottomOf="@+id/card_2_pc_add_side_b"
+        app:layout_constraintStart_toStartOf="@+id/card_2_pc_add_side_b"
+        app:layout_constraintEnd_toEndOf="@+id/card_2_pc_add_side_b"
+        android:text="@string/micronutrient_supplementation"
+        android:background="@drawable/light_border"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_color"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/card_4_pc_add_side_b"
+        app:layout_constraintTop_toBottomOf="@+id/card_3_pc_add_side_b"
+        app:layout_constraintStart_toStartOf="@+id/card_3_pc_add_side_b"
+        app:layout_constraintEnd_toEndOf="@+id/card_3_pc_add_side_b"
+        android:text="@string/tt_td_vaccination_status"
+        android:background="@drawable/light_border"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_color"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/card_5_pc_add_side_b"
+        app:layout_constraintTop_toBottomOf="@+id/card_4_pc_add_side_b"
+        app:layout_constraintStart_toStartOf="@+id/card_4_pc_add_side_b"
+        app:layout_constraintEnd_toEndOf="@+id/card_4_pc_add_side_b"
+        android:text="@string/maternal_client_record"
+        android:background="@drawable/light_border"
+        android:textAlignment="textStart"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_color"/>
+
+    <ProgressBar
+        android:layout_width="@dimen/_30sdp"
+        android:id="@+id/progress_bar_side_b_pc"
+        android:layout_height="@dimen/_30sdp"
+        android:indeterminateTint="@color/main_color"
+        app:layout_constraintStart_toStartOf="@+id/card_5_pc_add_side_b"
+        app:layout_constraintEnd_toEndOf="@+id/card_5_pc_add_side_b"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_side_b_pc"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

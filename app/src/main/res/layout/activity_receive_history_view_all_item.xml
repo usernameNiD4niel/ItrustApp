@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/main_color"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_name"
+            android:textColor="@color/background__"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/name_tag_receive_history"
+            app:layout_constraintStart_toStartOf="parent"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daniel_v_rey"
+            android:id="@+id/patient_name_receive_inventory_medicine_item"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/background__"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/name_tag_receive_history"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/name_tag_receive_history"
+            android:text="@string/medicine_name"
+            android:textColor="@color/background__"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/medicine_name_tag_receive_history"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toStartOf="@+id/name_tag_receive_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aspirin"
+            app:layout_constraintStart_toEndOf="@+id/medicine_name_tag_receive_history"
+            android:textColor="@color/background__"
+            app:layout_constraintTop_toTopOf="@+id/medicine_name_tag_receive_history"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:id="@+id/medicine_name_text_receive_history"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/date_received_label_received_history"
+            android:layout_height="wrap_content"
+            android:text="@string/date_received"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_name_tag_receive_history"
+            android:textColor="@color/background__"
+            app:layout_constraintStart_toStartOf="@+id/medicine_name_tag_receive_history"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_02_26_2023"
+            app:layout_constraintTop_toTopOf="@+id/date_received_label_received_history"
+            app:layout_constraintStart_toEndOf="@+id/date_received_label_received_history"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/date_received_history_view"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/date_received_label_received_history"
+            android:textColor="@color/background__"
+            app:layout_constraintStart_toStartOf="@+id/date_received_label_received_history"
+            android:id="@+id/quantity_label_received_history"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/quantity_label_received_history"
+            app:layout_constraintTop_toTopOf="@+id/quantity_label_received_history"
+            android:text="@string/_1"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/quantity_text_receive_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reason"
+            android:textColor="@color/background__"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/quantity_label_received_history"
+            app:layout_constraintStart_toStartOf="@+id/quantity_label_received_history"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/reason_label_receive_history"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque"
+            android:textColor="@color/background__"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/reason_text_receive_history"
+            app:layout_constraintTop_toTopOf="@+id/reason_label_receive_history"
+            app:layout_constraintStart_toEndOf="@+id/reason_label_receive_history"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

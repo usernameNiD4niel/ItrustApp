@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatfeature.activities.ChatFeatureUserInfo">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backButtonChatFeatureInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/main_color">
+
+        <TextView
+            android:id="@+id/chattingToBannerTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/darna"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:padding="@dimen/_15sdp"/>
+
+        <ImageView
+            android:id="@+id/backButtonChatFeatureUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:contentDescription="@string/starla"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfileChatFeature"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:layout_constraintTop_toBottomOf="@+id/backButtonChatFeatureInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:civ_border_color="@color/main_color"
+        app:civ_border_width="@dimen/_3sdp"
+        android:elevation="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/darna_final"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewChatUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileChatFeature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:id="@+id/personal_information_cfui"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_information"
+                android:textColor="@color/main_color"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userProfileIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_person_chat"
+                    app:tint="@color/main_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/personal_information"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/chattingToName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jane_de_leon"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/userProfileIcon"
+                    app:layout_constraintTop_toTopOf="@+id/userProfileIcon"
+                    app:layout_constraintStart_toEndOf="@+id/userProfileIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userNumberIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_starla_phone"
+                    app:tint="@color/main_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/personal_information"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/chattingToContactInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0987_654_3210"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/userNumberIcon"
+                    app:layout_constraintTop_toTopOf="@+id/userNumberIcon"
+                    app:layout_constraintStart_toEndOf="@+id/userNumberIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userAddressIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_starla_address"
+                    app:tint="@color/main_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/personal_information"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/chattingToLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/purok_4_itong_address_ay_sample_lamang_at_ito_y_papalitan_din"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/userAddressIcon"
+                    app:layout_constraintTop_toTopOf="@+id/userAddressIcon"
+                    app:layout_constraintStart_toEndOf="@+id/userAddressIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userEmailIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/personal_information"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/chattingToEmailInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barangayalawihaoofficial_gmail_com"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/userEmailIcon"
+                    app:layout_constraintTop_toTopOf="@+id/userEmailIcon"
+                    app:layout_constraintStart_toEndOf="@+id/userEmailIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:fontFamily="@font/poppins_medium"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/main_color"
+            android:id="@+id/progress_bar_chat_feature_user_info"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/downloadConversationButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/download_conversation"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewChatUserInfo"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableEnd="@drawable/ic_download"
+        android:drawableTint="@color/white"
+        tools:targetApi="m" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

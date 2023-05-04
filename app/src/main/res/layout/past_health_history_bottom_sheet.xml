@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/dark_color"
+            android:id="@+id/line_bottom_sheet_oh_pc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/past_health_history"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/line_bottom_sheet_oh_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/main_color"
+            android:id="@+id/past_health_history_label_phh_pc"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_label_phh_pc"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_label_phh_pc"
+            android:text="@string/allergies"
+            android:id="@+id/past_health_history_1_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_1_check"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_1_check"
+            android:text="@string/drug_intake_anti_tb_anti_diabetic_anti_convulsant"
+            android:id="@+id/past_health_history_2_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_2_check"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_2_check"
+            android:text="@string/bleeding_tendencies_nose_gums_etc"
+            android:id="@+id/past_health_history_3_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_3_check"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_3_check"
+            android:text="@string/anemia"
+            android:id="@+id/past_health_history_4_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_4_check"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_4_check"
+            android:text="@string/diabetes"
+            android:id="@+id/past_health_history_5_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_5_check"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_5_check"
+            android:text="@string/itching_or_sores_in_or_around_the_vagina"
+            android:id="@+id/past_health_history_6_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_6_check"
+            app:layout_constraintStart_toStartOf="@+id/past_health_history_6_check"
+            android:text="@string/pain_or_burning_sensation_on_urination"
+            android:id="@+id/past_health_history_7_check"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/past_health_history_7_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/light_border"
+            android:backgroundTint="@color/main_color"
+            android:textAllCaps="false"
+            android:textColor="@color/background__"
+            android:id="@+id/save_records_button_phh_bottom_sheet"
+            android:text="@string/save_records"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

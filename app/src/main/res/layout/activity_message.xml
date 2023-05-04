@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".chatfeature.activities.MessageActivity">
+
+    <ImageView
+        android:id="@+id/backButtonMessageActivity"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:contentDescription="@string/company_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/dark_icon__"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <TextView
+        android:id="@+id/userFullNameMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daniel_rey"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toEndOf="@+id/backButtonMessageActivity"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"/>
+
+    <ImageView
+        android:id="@+id/chatInfoButton"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_chat_info"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalLineMessage"
+        android:contentDescription="@string/chat"/>
+
+    <View
+        android:id="@+id/horizontalLineMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/circular_color"
+        app:layout_constraintTop_toBottomOf="@+id/userFullNameMessage"/>
+
+    <TextView
+        android:id="@+id/activeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLineMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/dark_color"
+        android:textColor="@color/white"
+        android:text="@string/offline"
+        android:textAlignment="center"
+        android:paddingVertical="@dimen/_2sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessage"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/activeStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/messageContent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarMessage"
+        android:indeterminateTint="@color/main_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/horizontalLineMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/messageContent"/>
+
+    <EditText
+        android:id="@+id/messageContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_45sdp"
+        android:maxHeight="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendMessageFab"
+        android:background="@drawable/message_admin_etbg"
+        android:hint="@string/mensahe"
+        android:fontFamily="monospace"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:imeOptions="flagNoExtractUi"
+        android:textSize="@dimen/_12ssp"
+        android:backgroundTint="@color/dark_shadow__"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no"
+        android:inputType="none" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sendMessageFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        android:contentDescription="@string/company_logo"
+        app:tint="@color/background__"
+        android:backgroundTint="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

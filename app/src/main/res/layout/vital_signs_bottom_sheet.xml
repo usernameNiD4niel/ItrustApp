@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/dark_color"
+            android:id="@+id/line_bottom_sheet_vs_pc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/main_color"
+            app:layout_constraintTop_toBottomOf="@+id/line_bottom_sheet_vs_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/vital_signs"
+            android:id="@+id/vital_signs_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/vital_signs_label_vs_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/_1st_trimester"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            android:background="@color/secondary_text__"
+            android:textColor="@color/background__"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/first_trimester_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3rd_mo"
+            app:layout_constraintTop_toBottomOf="@+id/first_trimester_label_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/first_trimester_label_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/third_month_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2nd_mo"
+            app:layout_constraintTop_toTopOf="@+id/third_month_label_vs_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/third_month_label_vs_pc"
+            app:layout_constraintEnd_toStartOf="@+id/third_month_label_vs_pc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/second_month_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1st_mo"
+            app:layout_constraintTop_toTopOf="@+id/second_month_label_vs_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/second_month_label_vs_pc"
+            app:layout_constraintEnd_toStartOf="@+id/second_month_label_vs_pc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/first_month_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/first_month_label_vs_pc"
+            android:textAlignment="center"
+            android:text="@string/bp"
+            app:layout_constraintTop_toBottomOf="@+id/first_month_label_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_date_visit_1st_trimester_et_vs_pc"
+            android:textColor="@color/black_100"
+            android:id="@+id/first_tri_q1_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/first_month_label_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/first_month_label_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/first_month_label_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_date_visit_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/second_month_label_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/second_month_label_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/second_month_label_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_date_visit_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/third_month_label_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/third_month_label_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/third_month_label_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_date_visit_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_aog_1st_trimester_et_vs_pc"
+            android:text="@string/weight"
+            app:layout_constraintTop_toTopOf="@+id/m1_aog_1st_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_aog_1st_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/first_tri_q2_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_date_visit_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_date_visit_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_date_visit_1st_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_aog_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_date_visit_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_date_visit_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_date_visit_1st_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_aog_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_date_visit_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_date_visit_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_date_visit_1st_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_aog_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            android:text="@string/pulse_rate"
+            app:layout_constraintTop_toTopOf="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/first_tri_q3_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_aog_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_aog_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_aog_1st_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_aog_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_aog_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_aog_1st_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_fundic_height_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_aog_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_aog_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_aog_1st_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_fundic_height_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_fht_1st_trimester_et_vs_pc"
+            android:text="@string/muac"
+            app:layout_constraintTop_toTopOf="@+id/m1_fht_1st_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_fht_1st_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/first_tri_q4_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_fundic_height_1st_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_fht_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_fundic_height_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_fundic_height_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_fundic_height_1st_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_fht_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_fundic_height_1st_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_fundic_height_1st_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_fundic_height_1st_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_fht_1st_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/m3_fht_1st_trimester_et_vs_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/_2nd_trimester"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            android:background="@color/secondary_text__"
+            android:textColor="@color/background__"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/second_trimester_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_6th_mo"
+            app:layout_constraintTop_toBottomOf="@+id/second_trimester_label_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/second_trimester_label_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/third_month_label_2nd_tri_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5th_mo"
+            app:layout_constraintTop_toTopOf="@+id/third_month_label_2nd_tri_vs_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/third_month_label_2nd_tri_vs_pc"
+            app:layout_constraintEnd_toStartOf="@+id/third_month_label_2nd_tri_vs_pc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/second_month_label_second_tri_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4th_mo"
+            app:layout_constraintTop_toTopOf="@+id/second_month_label_second_tri_vs_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/second_month_label_second_tri_vs_pc"
+            app:layout_constraintEnd_toStartOf="@+id/second_month_label_second_tri_vs_pc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/first_month_label_second_tri_vs_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/first_month_label_second_tri_vs_pc"
+            android:textAlignment="center"
+            android:text="@string/bp"
+            app:layout_constraintTop_toBottomOf="@+id/first_month_label_second_tri_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_date_visit_2nd_trimester_et_vs_pc"
+            android:textStyle="bold"
+            android:textColor="@color/black_100"
+            android:id="@+id/second_tri_q1_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/first_month_label_second_tri_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/first_month_label_second_tri_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/first_month_label_second_tri_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_date_visit_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/second_month_label_second_tri_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/second_month_label_second_tri_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/second_month_label_second_tri_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_date_visit_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/third_month_label_2nd_tri_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/third_month_label_2nd_tri_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/third_month_label_2nd_tri_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_date_visit_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            android:text="@string/weight"
+            app:layout_constraintTop_toTopOf="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/second_tri_q2_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_date_visit_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_date_visit_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_date_visit_2nd_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_date_visit_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_date_visit_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_date_visit_2nd_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_aog_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_date_visit_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_date_visit_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_date_visit_2nd_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_aog_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            android:text="@string/pulse_rate"
+            app:layout_constraintTop_toTopOf="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/second_tri_q3_tae_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_aog_2nd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_aog_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_aog_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_aog_2nd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_fundic_height_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_aog_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_aog_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_aog_2nd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_fundic_height_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_fht_2nd_trimester_et_vs_pc"
+            android:text="@string/muac"
+            app:layout_constraintTop_toTopOf="@+id/m1_fht_2nd_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_fht_2nd_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/second_tri_q4_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_fundic_height_2nd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_fht_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_fundic_height_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_fundic_height_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_fundic_height_2nd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_fht_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_fundic_height_2nd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_fundic_height_2nd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_fundic_height_2nd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_fht_2nd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/m3_fht_2nd_trimester_et_vs_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/_3rd_trimester"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            android:background="@color/secondary_text__"
+            android:textColor="@color/background__"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/third_trimester_label_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_9th_mo"
+            app:layout_constraintTop_toBottomOf="@+id/third_trimester_label_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/third_trimester_label_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/third_month_label_3rd_tri_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_8th_mo"
+            app:layout_constraintTop_toTopOf="@+id/third_month_label_3rd_tri_vs_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/third_month_label_3rd_tri_vs_pc"
+            app:layout_constraintEnd_toStartOf="@+id/third_month_label_3rd_tri_vs_pc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/second_month_label_third_tri_vs_pc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_7th_mo"
+            app:layout_constraintTop_toTopOf="@+id/second_month_label_third_tri_vs_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/second_month_label_third_tri_vs_pc"
+            app:layout_constraintEnd_toStartOf="@+id/second_month_label_third_tri_vs_pc"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/first_month_label_third_tri_vs_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/first_month_label_third_tri_vs_pc"
+            android:textAlignment="center"
+            android:text="@string/bp"
+            app:layout_constraintTop_toBottomOf="@+id/first_month_label_third_tri_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_date_visit_3rd_trimester_et_vs_pc"
+            android:textStyle="bold"
+            android:textColor="@color/black_100"
+            android:id="@+id/third_tri_q1_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/first_month_label_third_tri_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/first_month_label_third_tri_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/first_month_label_third_tri_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_date_visit_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/second_month_label_third_tri_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/second_month_label_third_tri_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/second_month_label_third_tri_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_date_visit_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/third_month_label_3rd_tri_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/third_month_label_3rd_tri_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/third_month_label_3rd_tri_vs_pc"
+            android:inputType="date"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_date_visit_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            android:text="@string/weight"
+            app:layout_constraintTop_toTopOf="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/third_tri_q2_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_date_visit_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_date_visit_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_date_visit_3rd_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_date_visit_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_date_visit_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_date_visit_3rd_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_aog_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_date_visit_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_date_visit_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_date_visit_3rd_trimester_et_vs_pc"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_aog_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            android:text="@string/pulse_rate"
+            app:layout_constraintTop_toTopOf="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/third_tri_q3_tae_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_aog_3rd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_aog_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_aog_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_aog_3rd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_fundic_height_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_aog_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_aog_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_aog_3rd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_fundic_height_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/m1_fht_3rd_trimester_et_vs_pc"
+            android:text="@string/muac"
+            app:layout_constraintTop_toTopOf="@+id/m1_fht_3rd_trimester_et_vs_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/m1_fht_3rd_trimester_et_vs_pc"
+            android:textAlignment="center"
+            android:textColor="@color/black_100"
+            android:id="@+id/third_tri_q4_vs_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m1_fundic_height_3rd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m1_fht_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m2_fundic_height_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m2_fundic_height_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m2_fundic_height_3rd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m2_fht_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/m3_fundic_height_3rd_trimester_et_vs_pc"
+            app:layout_constraintEnd_toEndOf="@+id/m3_fundic_height_3rd_trimester_et_vs_pc"
+            app:layout_constraintTop_toBottomOf="@+id/m3_fundic_height_3rd_trimester_et_vs_pc"
+            android:inputType="number"
+            android:importantForAutofill="no"
+            android:id="@+id/m3_fht_3rd_trimester_et_vs_pc"
+            tools:ignore="LabelFor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/m3_fht_3rd_trimester_et_vs_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/light_border"
+            android:backgroundTint="@color/main_color"
+            android:textAllCaps="false"
+            android:textColor="@color/background__"
+            android:id="@+id/save_records_button_vs_bottom_sheet"
+            android:text="@string/save_records"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

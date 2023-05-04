@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/dark_color"
+            android:id="@+id/line_bottom_sheet_ros_pc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/review_of_system"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/line_bottom_sheet_ros_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/main_color"
+            android:id="@+id/review_of_system_label_ros_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/review_of_system_label_ros_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/heent"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:id="@+id/heent_label_ros_pc"
+            android:textSize="@dimen/_13ssp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/epilepsy_convulsions_seizures"
+            app:layout_constraintTop_toBottomOf="@+id/heent_label_ros_pc"
+            app:layout_constraintStart_toStartOf="@+id/heent_label_ros_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/heent_1_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/severe_headache_dizziness"
+            app:layout_constraintTop_toBottomOf="@+id/heent_1_check"
+            app:layout_constraintStart_toStartOf="@+id/heent_1_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/heent_2_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/visual_disturbance_blurring_of_vision"
+            app:layout_constraintTop_toBottomOf="@+id/heent_2_check"
+            app:layout_constraintStart_toStartOf="@+id/heent_2_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/heent_3_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/yellowish_conjunctiva"
+            app:layout_constraintTop_toBottomOf="@+id/heent_3_check"
+            app:layout_constraintStart_toStartOf="@+id/heent_3_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/heent_4_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/enlarge_thyroid"
+            app:layout_constraintTop_toBottomOf="@+id/heent_4_check"
+            app:layout_constraintStart_toStartOf="@+id/heent_4_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/heent_5_check"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/heent_5_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/chest_heart"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:id="@+id/chest_heart_label_ros_pc"
+            android:textSize="@dimen/_13ssp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/severe_chest_pain"
+            app:layout_constraintTop_toBottomOf="@+id/chest_heart_label_ros_pc"
+            app:layout_constraintStart_toStartOf="@+id/chest_heart_label_ros_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/chest_hear__1_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/shortness_of_breath_and_easy_fatigability"
+            app:layout_constraintTop_toBottomOf="@+id/chest_hear__1_check"
+            app:layout_constraintStart_toStartOf="@+id/chest_hear__1_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/chest_hear__2_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/breast_and_axillary_masses"
+            app:layout_constraintTop_toBottomOf="@+id/chest_hear__2_check"
+            app:layout_constraintStart_toStartOf="@+id/chest_hear__2_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/chest_hear__3_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/nipple_discharges_specify_if_blood_or_pus"
+            app:layout_constraintTop_toBottomOf="@+id/chest_hear__3_check"
+            app:layout_constraintStart_toStartOf="@+id/chest_hear__3_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/chest_hear__4_check"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/chest_hear__4_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/abdomen"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:id="@+id/abdomen_label_ros_pc"
+            android:textSize="@dimen/_13ssp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/mass_in_the_abdomen"
+            app:layout_constraintTop_toBottomOf="@+id/abdomen_label_ros_pc"
+            app:layout_constraintStart_toStartOf="@+id/abdomen_label_ros_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/abdomen__1_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/history_of_gall_bladder_disease"
+            app:layout_constraintTop_toBottomOf="@+id/abdomen__1_check"
+            app:layout_constraintStart_toStartOf="@+id/abdomen__1_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/abdomen__2_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/history_of_liver_disease"
+            app:layout_constraintTop_toBottomOf="@+id/abdomen__2_check"
+            app:layout_constraintStart_toStartOf="@+id/abdomen__2_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/abdomen__3_check"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/abdomen__3_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/genital"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:id="@+id/genital_label_ros_pc"
+            android:textSize="@dimen/_13ssp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/vaginal_discharge"
+            app:layout_constraintTop_toBottomOf="@+id/genital_label_ros_pc"
+            app:layout_constraintStart_toStartOf="@+id/genital_label_ros_pc"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/genital__1_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/intermenstrual_bleeding"
+            app:layout_constraintTop_toBottomOf="@+id/genital__1_check"
+            app:layout_constraintStart_toStartOf="@+id/genital__1_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/genital__2_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/postcoital_bleeding"
+            app:layout_constraintTop_toBottomOf="@+id/genital__2_check"
+            app:layout_constraintStart_toStartOf="@+id/genital__2_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/genital__3_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/mass_in_the_uterus"
+            app:layout_constraintTop_toBottomOf="@+id/genital__3_check"
+            app:layout_constraintStart_toStartOf="@+id/genital__3_check"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"
+            android:id="@+id/genital__4_check"/>
+
+        <include
+            layout="@layout/extremities_skin_ros_bottom_sheet"
+            app:layout_constraintTop_toBottomOf="@id/genital__4_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:id="@+id/ros_p2_bottom_sheet"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

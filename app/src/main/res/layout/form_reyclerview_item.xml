@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/light_border"
+    android:padding="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/patient_name_label_form_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/daniel_v_rey"
+        app:layout_constraintStart_toEndOf="@+id/patient_name_label_form_item"
+        app:layout_constraintTop_toTopOf="@+id/patient_name_label_form_item"
+        app:layout_constraintBottom_toBottomOf="@+id/patient_name_label_form_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/patient_name_text_fp_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recently_date_added"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/patient_name_label_form_item"
+        app:layout_constraintTop_toBottomOf="@+id/patient_name_label_form_item"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/recently_date_added_label_form_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/recently_date_added_label_form_item"
+        app:layout_constraintTop_toTopOf="@+id/recently_date_added_label_form_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="@string/time_9_30am"
+        android:id="@+id/recently_date_added_text_fp_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recently_time_added"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/recently_date_added_label_form_item"
+        app:layout_constraintTop_toBottomOf="@+id/recently_date_added_label_form_item"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/recently_time_added_label_form_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/recently_time_added_label_form_item"
+        app:layout_constraintTop_toTopOf="@+id/recently_time_added_label_form_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="@string/time_9_30am"
+        android:id="@+id/recently_time_added_text_fp_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_records_created"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/recently_time_added_label_form_item"
+        app:layout_constraintTop_toBottomOf="@+id/recently_time_added_label_form_item"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/total_records_label_form_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/total_records_label_form_item"
+        app:layout_constraintTop_toTopOf="@+id/total_records_label_form_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="@string/_0"
+        android:id="@+id/total_records_created_text_fp_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

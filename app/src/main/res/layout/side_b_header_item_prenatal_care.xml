@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/side_b"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/side_a_label_header_prenatal_care"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/prenatal_care_record"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toStartOf="@+id/view_more_header_side_b_prenatal_care"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toBottomOf="@+id/side_a_label_header_prenatal_care"
+        app:layout_constraintStart_toStartOf="@+id/side_a_label_header_prenatal_care"
+        android:id="@+id/header_text_content_prenatal_care"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/header_text_content_prenatal_care"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/body_header_side_b_prenatal_care"
+        android:text="@string/all_records_here_are_side_b_you_can_click_view_more_to_view_all_client_and_to_view_detail_of_the_last_added_record_just_click_the_very_first_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/side_a_label_header_prenatal_care"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/view_more"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/main_color"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/view_more_header_side_b_prenatal_care"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/dark_color"
+            android:id="@+id/line_bottom_sheet_fph_pc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/family_planning_history"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/line_bottom_sheet_fph_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/main_color"
+            android:id="@+id/family_planning_history_label_pe_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/previously_used_method"
+            app:layout_constraintTop_toBottomOf="@+id/family_planning_history_label_pe_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/et_1_fph_bottom_sheet_pc"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/duration"
+            app:layout_constraintTop_toBottomOf="@+id/et_1_fph_bottom_sheet_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:id="@+id/et_2_fph_bottom_sheet_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/reminder"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/et_2_fph_bottom_sheet_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black_100"
+            android:id="@+id/reminder_label_fph_bottom_sheet_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/kindly_refer_to_physician_for_any_check_findings_for_further_evaluation"
+            app:layout_constraintTop_toBottomOf="@+id/reminder_label_fph_bottom_sheet_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black_100"
+            android:id="@+id/reminder_content_fph_bottom_sheet_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/covid_vaccination"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/reminder_content_fph_bottom_sheet_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black_100"
+            android:id="@+id/covid_vaccination_label_fph_bottom_sheet_pc"/>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/covid_vaccination_label_fph_bottom_sheet_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            android:stretchColumns="*"
+            android:id="@+id/table_layout_fhp_bottom_sheet_pc"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_5sdp"
+                android:background="@color/secondary_text__"
+                android:id="@+id/row_1_fph_pc">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/vaccine"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/background__"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAlignment="center"
+                    android:text="@string/date"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="@string/remarks"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_2_fph_pc">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_100"
+                    android:textStyle="bold"
+                    android:text="@string/first_dose"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/first_dose_vaccine_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="date"
+                    android:importantForAutofill="no"
+                    android:id="@+id/first_dose_date_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/first_dose_remarks_fph_pc"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_3_fph_pc">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_100"
+                    android:textStyle="bold"
+                    android:text="@string/_2nd_dose"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/second_dose_vaccine_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="date"
+                    android:importantForAutofill="no"
+                    android:id="@+id/second_dose_date_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/second_dose_remarks_fph_pc"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_4_fph_pc">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_100"
+                    android:textStyle="bold"
+                    android:text="@string/booster"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/third_dose_vaccine_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="date"
+                    android:importantForAutofill="no"
+                    android:id="@+id/third_dose_date_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/third_dose_remarks_fph_pc"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_5_fph_pc">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_100"
+                    android:textStyle="bold"
+                    android:text="@string/booster"
+                    android:textSize="@dimen/_12ssp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/fourth_dose_vaccine_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="date"
+                    android:importantForAutofill="no"
+                    android:id="@+id/fourth_dose_date_fph_pc"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:id="@+id/fourth_dose_remarks_fph_pc"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/table_layout_fhp_bottom_sheet_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/light_border"
+            android:backgroundTint="@color/main_color"
+            android:textAllCaps="false"
+            android:textColor="@color/background__"
+            android:id="@+id/save_records_button_fph_bottom_sheet"
+            android:text="@string/save_records"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/extremities"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        android:id="@+id/extremities_label_ros_pc"
+        android:textSize="@dimen/_13ssp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:text="@string/severe_varicosities"
+        app:layout_constraintTop_toBottomOf="@+id/extremities_label_ros_pc"
+        app:layout_constraintStart_toStartOf="@+id/extremities_label_ros_pc"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/extremities__1_check"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:text="@string/swelling_or_severe_pain_in_the_legs_not_related_to_injuries"
+        app:layout_constraintTop_toBottomOf="@+id/extremities__1_check"
+        app:layout_constraintStart_toStartOf="@+id/extremities__1_check"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/extremities__2_check"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/extremities__2_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/skin"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        android:id="@+id/skin_label_ros_pc"
+        android:textSize="@dimen/_13ssp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:text="@string/yellowish"
+        app:layout_constraintTop_toBottomOf="@+id/skin_label_ros_pc"
+        app:layout_constraintStart_toStartOf="@+id/skin_label_ros_pc"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/skin__1_check"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/skin__1_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/light_border"
+        android:backgroundTint="@color/main_color"
+        android:textAllCaps="false"
+        android:textColor="@color/background__"
+        android:id="@+id/save_records_button_ros_bottom_sheet"
+        android:text="@string/save_records"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp">
+
+    <ImageView
+        android:id="@+id/closeRateUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:contentDescription="@string/starla"
+        app:tint="@color/main_color"/>
+
+    <ImageView
+        android:id="@+id/starlaImageRateUsPopUp"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/starla"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/starla"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_7sdp"/>
+
+    <TextView
+        android:id="@+id/titleTextRateUsPopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_us_know_how_good_is_starla"
+        app:layout_constraintTop_toBottomOf="@+id/starlaImageRateUsPopUp"
+        app:layout_constraintStart_toStartOf="@+id/starlaImageRateUsPopUp"
+        app:layout_constraintEnd_toEndOf="@+id/starlaImageRateUsPopUp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/contentTextRateUsPopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextRateUsPopUp"
+        app:layout_constraintStart_toStartOf="@+id/titleTextRateUsPopUp"
+        app:layout_constraintEnd_toEndOf="@+id/titleTextRateUsPopUp"
+        android:text="@string/by_rating_us_you_can_help_us_to_keep_track_the_progress_of_starla"
+        android:maxWidth="@dimen/_190sdp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+
+    <LinearLayout
+        android:id="@+id/starRatingContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/contentTextRateUsPopUp">
+
+        <ImageView
+            android:id="@+id/oneStarRatePopUp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:contentDescription="@string/starla"
+            app:tint="@color/dark_color"/>
+
+        <ImageView
+            android:id="@+id/twoStarRatePopUp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:contentDescription="@string/starla"
+            app:tint="@color/dark_color"/>
+
+        <ImageView
+            android:id="@+id/threeStarRatePopUp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:contentDescription="@string/starla"
+            app:tint="@color/dark_color"/>
+
+
+        <ImageView
+            android:id="@+id/fourStarRatePopUp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:contentDescription="@string/starla"
+            app:tint="@color/dark_color"/>
+
+        <ImageView
+            android:id="@+id/fiveStarRatePopUp"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:contentDescription="@string/starla"
+            app:tint="@color/dark_color"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rateUsNow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starRatingContainer"
+        android:text="@string/rate"
+        android:textAllCaps="false"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

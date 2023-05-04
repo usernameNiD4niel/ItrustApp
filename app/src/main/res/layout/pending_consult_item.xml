@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/background__"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/scheduleOfConsultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monday_9_00am"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/main_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patientName"
+            android:textColor="@color/main_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daniel_rey"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="end|center">
+
+        <ProgressBar
+            android:id="@+id/pendingConsultItemProgressBar"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:indeterminateTint="@color/main_color"
+            android:layout_height="40dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/approvePatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/approved"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/ic_approve"/>
+
+        <ImageView
+            android:id="@+id/declinePatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:contentDescription="@string/declined"
+            android:src="@drawable/ic_decline"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

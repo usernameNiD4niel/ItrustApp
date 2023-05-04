@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_home_page_adapter"
+    android:background="@color/black"
+    tools:context=".youtube_player.FragmentHomePageAdapter">
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_video_id_2"
+        android:layout_width="match_parent"
+        app:enableAutomaticInitialization="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:autoPlay="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/video_data_caption_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/video_data_date_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/this_is_a_sample_caption_from_your_heart_pare_hahaha_babaguhin_pa_naman_ti_pinapahaba_ko_lang_para_cool_kunware"
+        android:textColor="@color/dark_shadow__" />
+
+    <TextView
+        android:id="@+id/video_data_date_2"
+        android:layout_width="0dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:textColor="@color/secondary_text__"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/december_26_2022"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

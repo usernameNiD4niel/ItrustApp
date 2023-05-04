@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:menuCategory="container">
+
+        <item android:id="@+id/nav_registered_user"
+            android:icon="@drawable/registered_user_icon"
+            android:title="@string/registered_user"/>
+
+        <item android:id="@+id/nav_consultation_schedule"
+            android:icon="@drawable/consultation_schedule_icon"
+            android:title="@string/consultation_schedule"/>
+
+        <item android:id="@+id/nav_status_request"
+            android:icon="@drawable/ic_status_request"
+            android:title="@string/status_request"/>
+
+        <item android:id="@+id/nav_chatbot_history"
+            android:icon="@drawable/ic_add_user"
+            android:title="@string/chatbot_history"/>
+
+        <item android:id="@+id/nav_admins"
+            android:icon="@drawable/admins_icon"
+            android:title="@string/admins"/>
+
+        <item android:id="@+id/nav_passcode"
+            android:icon="@drawable/passcode_icon"
+            android:title="@string/passcode"/>
+
+        <item android:id="@+id/nav_activity_logs"
+            android:icon="@drawable/ic_activity_log"
+            android:title="@string/activity_log"/>
+
+        <item android:id="@+id/nav_video_recommendation"
+            android:icon="@drawable/ic_video_recommendation"
+            android:title="@string/video_recommendation"/>
+
+        <item android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_email"
+            android:title="@string/chat"/>
+
+        <item android:id="@+id/nav_starla"
+            android:icon="@drawable/ic_baseline_dataset_24"
+            android:title="@string/forms"/>
+
+        <item android:id="@+id/medicine_inventory_admin"
+            android:icon="@drawable/ic_baseline_inventory_24"
+            android:title="@string/medicine_inventory"/>
+
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout"/>
+
+    </group>
+
+
+</menu>

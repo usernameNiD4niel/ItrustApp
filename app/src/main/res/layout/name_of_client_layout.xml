@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/name_of_client"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/noc_label_add_form_fp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/last_name_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/noc_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/noc_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/noc_label_add_form_fp"
+        android:hint="@string/last_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/last_name_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/given_name_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/last_name_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/last_name_label_add_form_fp"
+        android:hint="@string/given_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/given_name_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mi_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/given_name_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/given_name_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/given_name_label_add_form_fp"
+        android:hint="@string/mi">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:id="@+id/mi_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dob_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mi_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/mi_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/mi_label_add_form_fp"
+        android:hint="@string/date_of_birth_10_25_2000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/dob_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/age_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dob_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/dob_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/dob_label_add_form_fp"
+        android:hint="@string/age">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/age_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/educ_att_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/age_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/age_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/age_label_add_form_fp"
+        android:hint="@string/educ_attain">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/educ_att_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/occupation_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/educ_att_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/educ_att_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/educ_att_label_add_form_fp"
+        android:hint="@string/occupation">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/occupation_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

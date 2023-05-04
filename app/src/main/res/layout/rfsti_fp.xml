@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:id="@+id/rfsti_label_fp"
+        android:text="@string/risk_for_sexually_transmitted_infections"
+        android:textSize="@dimen/_14ssp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rfsti_label_fp"
+        app:layout_constraintStart_toStartOf="@+id/rfsti_label_fp"
+        app:layout_constraintEnd_toEndOf="@+id/rfsti_label_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/medical_history_sub_label_fp"
+        android:text="@string/does_the_client_or_the_client_partner_have_any_of_the_following"
+        android:textSize="@dimen/_12ssp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/abnormal_discharge_from_the_genital_area"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@id/rfsti_1_yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_1_yes"
+        app:layout_constraintStart_toStartOf="@id/rfsti_label_fp"
+        android:id="@+id/rfsti_1_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/medical_history_sub_label_fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_1_question"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/rfsti_1_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_1_no"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_1_no"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_1_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/rfsti_1_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/if_yes_please_indicate_it_from"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/rfsti_1_question"
+        app:layout_constraintStart_toStartOf="@id/rfsti_1_question"
+        android:id="@+id/rfsti_1_question_specify"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vagina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_1_yes_penis"
+        app:layout_constraintStart_toEndOf="@+id/rfsti_1_yes_penis"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_1_yes_penis"
+        android:id="@+id/rfsti_1_yes_vagina"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/penis"
+        app:layout_constraintStart_toEndOf="@+id/rfsti_1_question_specify"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_1_question_specify"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_1_question_specify"
+        android:id="@+id/rfsti_1_yes_penis"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/score_or_ulcers_in_the_genital_area"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_2_yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_2_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_2_yes"
+        app:layout_constraintStart_toStartOf="@id/rfsti_1_question"
+        android:id="@+id/rfsti_2_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_2_no"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_2_no"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_2_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/rfsti_2_yes"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintEnd_toEndOf="@id/rfsti_1_yes_vagina"
+        app:layout_constraintTop_toBottomOf="@+id/rfsti_1_yes_vagina"
+        android:id="@+id/rfsti_2_no"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pain_or_burning_sensation_in_the_genital_area"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_3_yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_3_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_3_yes"
+        app:layout_constraintStart_toStartOf="@id/rfsti_1_question"
+        android:id="@+id/rfsti_3_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_3_no"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_3_no"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_3_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/rfsti_3_yes"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintEnd_toEndOf="@id/rfsti_2_no"
+        app:layout_constraintTop_toBottomOf="@+id/rfsti_2_no"
+        android:id="@+id/rfsti_3_no"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/history_of_treatment_for_sexually_transmitted_infections"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_4_yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_4_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_4_yes"
+        app:layout_constraintStart_toStartOf="@id/rfsti_3_question"
+        android:id="@+id/rfsti_4_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_4_no"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_4_no"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_4_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/rfsti_4_yes"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintEnd_toEndOf="@id/rfsti_3_no"
+        app:layout_constraintTop_toBottomOf="@+id/rfsti_3_no"
+        android:id="@+id/rfsti_4_no"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hiv_aids_pelvic_inflammatory_disease"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_5_yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_5_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_5_yes"
+        app:layout_constraintStart_toStartOf="@id/rfsti_4_question"
+        android:id="@+id/rfsti_5_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/rfsti_5_no"
+        app:layout_constraintTop_toTopOf="@+id/rfsti_5_no"
+        app:layout_constraintBottom_toBottomOf="@+id/rfsti_5_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/rfsti_5_yes"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintEnd_toEndOf="@id/rfsti_4_no"
+        app:layout_constraintTop_toBottomOf="@+id/rfsti_4_no"
+        android:id="@+id/rfsti_5_no"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

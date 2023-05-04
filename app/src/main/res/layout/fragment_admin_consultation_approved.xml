@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".AdminConsultationApprovedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewApprove"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:listitem="@layout/approve_consult_item"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarApprove"
+        android:layout_width="wrap_content"
+        android:indeterminateTint="@color/main_color"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/noDataFoundApprove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

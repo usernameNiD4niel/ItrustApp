@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/patient_name_label_side_b_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/daniel_v_rey"
+        app:layout_constraintStart_toEndOf="@+id/patient_name_label_side_b_item"
+        app:layout_constraintTop_toTopOf="@+id/patient_name_label_side_b_item"
+        app:layout_constraintBottom_toBottomOf="@+id/patient_name_label_side_b_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/patient_name_text__side_b_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_visit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/patient_name_label_side_b_item"
+        app:layout_constraintTop_toBottomOf="@+id/patient_name_label_side_b_item"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/date_of_visit_label_side_b_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/date_of_visit_label_side_b_item"
+        app:layout_constraintTop_toTopOf="@+id/date_of_visit_label_side_b_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="@string/time_9_30am"
+        android:id="@+id/date_of_visit_text_side_b_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/follow_up_date_visit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/date_of_visit_label_side_b_item"
+        app:layout_constraintTop_toBottomOf="@+id/date_of_visit_label_side_b_item"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/followup_date_visit_label_side_b_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/followup_date_visit_label_side_b_item"
+        app:layout_constraintTop_toTopOf="@+id/followup_date_visit_label_side_b_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:text="@string/time_9_30am"
+        android:id="@+id/followup_date_visit_text_side_b_item"
+        android:fontFamily="@font/poppins_medium"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

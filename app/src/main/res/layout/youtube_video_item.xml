@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:id="@+id/thumbnail_youtube_video_img"
+        android:src="@drawable/thumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/youtube_thumbnail"/>
+
+    <TextView
+        android:id="@+id/video_data_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/thumbnail_youtube_video_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail_youtube_video_img"
+        android:text="@string/menstruation_and_menstrual_disorders"
+        android:textColor="@color/dark_shadow__" />
+
+    <TextView
+        android:id="@+id/video_data_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/video_data_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_data_title"
+        android:text="@string/this_is_a_sample_caption_from_your_heart_pare_hahaha_babaguhin_pa_naman_ti_pinapahaba_ko_lang_para_cool_kunware"
+        android:textColor="@color/dark_shadow__" />
+
+    <TextView
+        android:id="@+id/video_data_date"
+        android:layout_width="0dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:textColor="@color/secondary_text__"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/video_data_caption"
+        app:layout_constraintTop_toBottomOf="@+id/video_data_caption"
+        android:text="@string/december_26_2022"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/address"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/main_color"
+        android:id="@+id/address_label_pi_pc"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/purok_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/address_label_pi_pc"
+        app:layout_constraintStart_toStartOf="@+id/address_label_pi_pc"
+        app:layout_constraintEnd_toEndOf="@+id/address_label_pi_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/number_street_purok">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:text="@string/purok"
+            android:id="@+id/purok_et_pi_bottom_sheet"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/barangay_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/purok_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/purok_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/purok_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/barangay">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:text="@string/alawihao"
+            android:id="@+id/barangay_et_pi_bottom_sheet"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/municipality_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/barangay_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/barangay_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/barangay_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/municipality">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:text="@string/daet"
+            android:id="@+id/municipality_et_pi_bottom_sheet"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/province_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/municipality_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/municipality_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/municipality_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/province">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:text="@string/camarines_norte"
+            android:inputType="text"
+            android:id="@+id/province_et_pi_bottom_sheet"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ami_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/province_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/province_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/province_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/average_monthly_income">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:id="@+id/ami_et_pi_bottom_sheet"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact_number_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/ami_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/ami_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/ami_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contact_number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:id="@+id/contact_number_et_pi_bottom_sheet"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phic_cat_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/contact_number_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/contact_number_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/contact_number_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/phic_cat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/phic_cat_et_pi_bottom_sheet"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nolc_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/phic_cat_personal_info_pc"
+        app:layout_constraintStart_toStartOf="@+id/phic_cat_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/phic_cat_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/number_of_living_children">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/nolc_et_pi_bottom_sheet"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/birth_plan"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/nolc_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/nolc_personal_info_pc"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/main_color"
+        android:id="@+id/birth_plan_label_pi_pc"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/hospital"
+        app:layout_constraintStart_toEndOf="@+id/birth_plan_label_pi_pc"
+        app:layout_constraintTop_toTopOf="@+id/birth_plan_label_pi_pc"
+        app:layout_constraintBottom_toBottomOf="@+id/birth_plan_label_pi_pc"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/hospital_pi_pc"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rhu"
+        app:layout_constraintStart_toStartOf="@+id/hospital_pi_pc"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_pi_pc"
+        android:id="@+id/rhu_pi_pc"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lying_in_clinic"
+        app:layout_constraintStart_toStartOf="@+id/rhu_pi_pc"
+        app:layout_constraintTop_toBottomOf="@+id/rhu_pi_pc"
+        android:id="@+id/lying_in_clinic_pi_pc"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phil_number_personal_info_pc"
+        app:layout_constraintTop_toBottomOf="@+id/lying_in_clinic_pi_pc"
+        app:layout_constraintStart_toStartOf="@+id/phic_cat_personal_info_pc"
+        app:layout_constraintEnd_toEndOf="@+id/phic_cat_personal_info_pc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/philhealth">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:id="@+id/phil_health_et_pi_bottom_sheet"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".ForgotPinCode">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backButtonForgotPinCode"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/img_back"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <ImageView
+            android:id="@+id/forgotPinLogo"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintTop_toBottomOf="@+id/backButtonForgotPinCode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/company_sub_logo"
+            android:src="@drawable/ic_pincode_forgot"
+            app:tint="@color/main_color"/>
+
+        <TextView
+            android:id="@+id/forgotPinCodeTextContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPinLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/to_verify_that_you_are_the_legitimate_user_of_this_account_you_must_enter_a_correct_password_to_change_the_pin_of_tbis_account"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="monospace"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPinCodeTextContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingHorizontal="@dimen/_20sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/currentPasswordForgotPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/current_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/newPinForgotPinCode"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_pin"
+                app:counterMaxLength="4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:inputType="numberPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <Button
+                    android:id="@+id/updatePinCodeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/update_pin"
+                    android:textAllCaps="false"
+                    android:paddingVertical="@dimen/_12sdp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarForgotPin"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/main_color"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

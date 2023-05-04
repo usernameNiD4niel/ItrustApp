@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:elevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:id="@+id/adminListRowParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background__"
+        android:padding="@dimen/_7sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/usersProfile"
+            android:layout_width="@dimen/_40sdp"
+            android:elevation="@dimen/_5sdp"
+            app:civ_border_width="@dimen/_2sdp"
+            app:civ_border_color="@color/main_color"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/user_avatar_1"
+            android:contentDescription="@string/company_logo"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/fullNameUserList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daniel_rey"
+                android:textColor="@color/dark_color"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13ssp"/>
+
+            <TextView
+                android:id="@+id/purokUserList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_logo"
+                android:textColor="@color/dark_color"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/numberOfChats"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:src="@drawable/ic_active_user"
+        android:contentDescription="@string/active"
+        android:layout_gravity="end|center"
+        app:tint="@color/successful_color_900"
+        android:layout_marginEnd="@dimen/_20sdp"/>
+
+</androidx.cardview.widget.CardView>

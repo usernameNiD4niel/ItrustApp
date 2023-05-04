@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminform.activities.RequestedDataByUser">
+
+
+            <ImageView
+                android:id="@+id/backButtonRequestedDataByUser"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/img_back"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/company_logo"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <View
+                android:id="@+id/lineOneTopRequestedData"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/dark_color"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:id="@+id/lineTwoMidRequestedData"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/dark_color"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineOneTopRequestedData"/>
+
+            <View
+                android:id="@+id/lineThreeBottomRequestedData"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/dark_color"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineTwoMidRequestedData"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mainContentRequestedData"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                app:layout_constraintTop_toBottomOf="@+id/lineThreeBottomRequestedData"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/starlaTextRequestedData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11ssp"
+                    android:text="@string/starla"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/usersRequestedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_22ssp"
+                    android:text="@string/users_requested"
+                    app:layout_constraintTop_toBottomOf="@+id/starlaTextRequestedData"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_color"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/recyclerViewLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/list_of_questions"
+                    android:textStyle="bold"
+                    android:paddingVertical="@dimen/_5sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/usersRequestedTitle"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBarRequestedDataByUser"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:indeterminateTint="@color/main_color_300"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/adminQuestionRequestedData"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewRequestDataByUser"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerViewLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/adminQuestionRequestedData"/>
+
+                <Button
+                    android:id="@+id/adminQuestionRequestedData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_data"
+                    android:textAllCaps="false"
+                    android:background="@drawable/normal_state_btn_rounded"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

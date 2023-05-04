@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UserAboutUs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backButtonAboutApp"
+            android:layout_width="50dp"
+            android:contentDescription="@string/back_button"
+            android:layout_height="50dp"
+            android:src="@drawable/img_back"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="-5dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/mainone"
+            android:contentDescription="@string/company_logo"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/aboutUsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tungkol_sa_applikasyon"
+            android:textColor="@color/main_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/logoImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/aboutUsHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

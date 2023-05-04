@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_10sdp"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/daniel_rey"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/dark_shadow__"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="textStart"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/title_video_item_content"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginStart="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/title_video_item_content"
+        app:layout_constraintTop_toBottomOf="@id/title_video_item_content"
+        android:text="@string/this_is_a_sample_caption_from_your_heart_pare_hahaha_babaguhin_pa_naman_ti_pinapahaba_ko_lang_para_cool_kunware"
+        android:textColor="@color/secondary_text__"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/description_video_item_content"
+        android:textSize="@dimen/_11ssp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

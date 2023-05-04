@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".AdminConsultationDeclinedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDecline"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:listitem="@layout/decline_consult_item"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarDecline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/main_color"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/noDataFoundDecline"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data_found"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

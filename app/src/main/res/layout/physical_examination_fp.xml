@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/v_physical_examination"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/physical_examination_label_pe"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weight_pe_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/physical_examination_label_pe"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight_kg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/weight_et_pe_fp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/height_pe_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_pe_fp"
+        android:layout_height="wrap_content"
+        android:hint="@string/height_m">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:id="@+id/height__et_pe_fp"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/blood_pressure_pe_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_pe_fp"
+        android:layout_height="wrap_content"
+        android:hint="@string/blood_pressure_mmhg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:id="@+id/blood_pressure_et_pe_fp"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pulse_rate_pe_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/blood_pressure_pe_fp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pulse_rate_min">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/pulse_rate_et_pe_fp"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:text="@string/skin"
+        app:layout_constraintTop_toBottomOf="@+id/pulse_rate_pe_fp"
+        android:id="@+id/skin_label_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/pulse_rate_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/skin_label_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/skin_label_pe_fp"
+        android:text="@string/normal"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/normal_check_skin_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/normal_check_skin_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/normal_check_skin_pe_fp"
+        android:text="@string/pale"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/pale_check_skin_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/pale_check_skin_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/pale_check_skin_pe_fp"
+        android:text="@string/yellowish"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/yellowish_check_skin_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/yellowish_check_skin_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/yellowish_check_skin_pe_fp"
+        android:text="@string/hematoma"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/hematoma_check_skin_pe_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:text="@string/extremities"
+        app:layout_constraintTop_toTopOf="@+id/skin_label_pe_fp"
+        android:id="@+id/extremities_label_pe_fp"
+        app:layout_constraintStart_toEndOf="@+id/skin_label_pe_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/skin_label_pe_fp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/extremities_label_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/extremities_label_pe_fp"
+        android:text="@string/normal"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/normal_check_extremities_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/normal_check_extremities_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/normal_check_extremities_pe_fp"
+        android:text="@string/edema"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/edema_check_extremities_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/edema_check_extremities_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/edema_check_extremities_pe_fp"
+        android:text="@string/varicosities"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/varicosities_check_extremities_pe_fp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:text="@string/conjunctiva"
+        app:layout_constraintTop_toBottomOf="@id/hematoma_check_skin_pe_fp"
+        android:id="@+id/conjunctiva_label_pe_fp"
+        app:layout_constraintStart_toStartOf="@id/hematoma_check_skin_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/conjunctiva_label_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/conjunctiva_label_pe_fp"
+        android:text="@string/normal"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/normal_check_conjunctiva_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/normal_check_conjunctiva_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/normal_check_conjunctiva_pe_fp"
+        android:text="@string/pale"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/pale_check_conjunctiva_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/pale_check_conjunctiva_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/pale_check_conjunctiva_pe_fp"
+        android:text="@string/yellowish"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/yellowish_check_conjunctiva_pe_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:text="@string/neck"
+        app:layout_constraintTop_toBottomOf="@id/yellowish_check_conjunctiva_pe_fp"
+        android:id="@+id/neck_label_pe_fp"
+        app:layout_constraintStart_toStartOf="@id/conjunctiva_label_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/neck_label_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/neck_label_pe_fp"
+        android:text="@string/normal"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/normal_check_neck_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/normal_check_neck_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/normal_check_neck_pe_fp"
+        android:text="@string/neck_mass"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/neck_mass_check_neck_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/neck_mass_check_neck_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/neck_mass_check_neck_pe_fp"
+        android:text="@string/enlarged_lymph_nodes"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/eln_check_neck_pe_fp"/>
+
+    <include layout="@layout/left_pe_fp"
+        android:id="@+id/lef_pe_fp_"
+        app:layout_constraintTop_toBottomOf="@+id/eln_check_neck_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/neck_label_pe_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/right_pe_fp"
+        android:id="@+id/right_pe_fp_"
+        app:layout_constraintStart_toStartOf="@id/cc_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@id/firm_cc_pelvic_examination_pe_fp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:text="@string/pelvic_examination"
+        android:id="@+id/pelvic_examination_label_pe_fp"
+        app:layout_constraintStart_toStartOf="@id/varicosities_check_extremities_pe_fp"
+        app:layout_constraintTop_toBottomOf="@id/varicosities_check_extremities_pe_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/for_iud_acceptors"
+        android:id="@+id/pelvic_examination_acceptors_pe_fp"
+        app:layout_constraintStart_toStartOf="@id/pelvic_examination_label_pe_fp"
+        app:layout_constraintTop_toBottomOf="@id/pelvic_examination_label_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/pelvic_examination_acceptors_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/pelvic_examination_acceptors_pe_fp"
+        android:text="@string/normal"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/normal_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/normal_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/normal_pelvic_examination_pe_fp"
+        android:text="@string/mass"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/mass_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/mass_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/mass_pelvic_examination_pe_fp"
+        android:text="@string/abnormal_discharge"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/abnormal_discharge_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/abnormal_discharge_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/abnormal_discharge_pelvic_examination_pe_fp"
+        android:text="@string/cervical_abnormalities"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/ca_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/ca_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/ca_pelvic_examination_pe_fp"
+        android:text="@string/warts"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/warts_ca_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/warts_ca_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/warts_ca_pelvic_examination_pe_fp"
+        android:text="@string/polyp_or_cyst"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/poc_ca_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/poc_ca_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/poc_ca_pelvic_examination_pe_fp"
+        android:text="@string/inflammation_or_erosion"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/ioe_ca_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/ioe_ca_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/ioe_ca_pelvic_examination_pe_fp"
+        android:text="@string/bloody_discharge"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/bd_ca_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/ca_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/bd_ca_pelvic_examination_pe_fp"
+        android:text="@string/cervical_consistency"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/cc_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="@+id/cc_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toBottomOf="@+id/cc_pelvic_examination_pe_fp"
+        android:text="@string/firm"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/firm_cc_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toEndOf="@+id/firm_cc_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toTopOf="@+id/firm_cc_pelvic_examination_pe_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/firm_cc_pelvic_examination_pe_fp"
+        android:text="@string/soft"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/soft_cc_pelvic_examination_pe_fp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

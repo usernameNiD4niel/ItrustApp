@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@color/dark_color"
+            android:id="@+id/line_bottom_sheet_oh_pc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/obstetrical_history_pc"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/line_bottom_sheet_oh_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/main_color"
+            android:id="@+id/obstetrical_history_label_oh_pc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/number_of_pregnancies"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/obstetrical_history_label_oh_pc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/nop_label_oh_pc"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/nop_label_oh_pc"
+            app:layout_constraintStart_toStartOf="@+id/nop_label_oh_pc"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:hint="@string/full_term"
+            android:inputType="number"
+            android:autofillHints="postalCode"
+            android:id="@+id/nop_full_term_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/nop_full_term_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/nop_full_term_et_oh_bottom_sheet"
+            android:hint="@string/abortion"
+            android:inputType="number"
+            android:autofillHints="postalCode"
+            android:id="@+id/nop_abortion_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/nop_full_term_et_oh_bottom_sheet"
+            app:layout_constraintBottom_toBottomOf="@+id/nop_full_term_et_oh_bottom_sheet"
+            app:layout_constraintStart_toEndOf="@+id/nop_full_term_et_oh_bottom_sheet"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:hint="@string/premature"
+            android:inputType="number"
+            android:autofillHints="postalCode"
+            android:id="@+id/nop_premature_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/nop_premature_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/nop_premature_et_oh_bottom_sheet"
+            android:hint="@string/living"
+            android:inputType="number"
+            android:autofillHints="postalCode"
+            android:id="@+id/nop_living_et_oh_bottom_sheet"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nop_living_et_oh_bottom_sheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/children_label_oh_bottom_sheet"
+            android:text="@string/children"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/history_of_ectopic_pregnancy"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/children_label_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/children_label_oh_bottom_sheet"
+            android:id="@+id/obstetrical_history_1_check"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/hydatidiform_mole_with_the_last_12_months"
+            app:layout_constraintTop_toBottomOf="@+id/obstetrical_history_1_check"
+            app:layout_constraintStart_toStartOf="@+id/obstetrical_history_1_check"
+            android:id="@+id/obstetrical_history_2_check"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/obstetrical_history_2_check"
+            app:layout_constraintTop_toBottomOf="@+id/obstetrical_history_2_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/hopd_label_oh_bottom_sheet"
+            android:text="@string/history_of_previous_delivery"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hopd_label_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/hopd_label_oh_bottom_sheet"
+            android:hint="@string/date_of_last_delivery"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/dold_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/dold_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/dold_et_oh_bottom_sheet"
+            android:hint="@string/type_of_last_delivery"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/told_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/told_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/told_et_oh_bottom_sheet"
+            android:hint="@string/birth_attendant_in_last_delivery"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/baild_et_oh_bottom_sheet"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/baild_et_oh_bottom_sheet"
+            app:layout_constraintTop_toBottomOf="@+id/baild_et_oh_bottom_sheet"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/menstrual_history_label_oh_bottom_sheet"
+            android:text="@string/menstrual_history"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/menstrual_history_label_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/menstrual_history_label_oh_bottom_sheet"
+            android:hint="@string/last_menstrual_period"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/lmp_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/lmp_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/lmp_et_oh_bottom_sheet"
+            android:hint="@string/period_menstrual_previous"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/pmp_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/pmp_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/pmp_et_oh_bottom_sheet"
+            android:hint="@string/duration_of_menstrual_bleeding"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/domb_et_oh_bottom_sheet"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/domb_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="@+id/domb_et_oh_bottom_sheet"
+            android:hint="@string/character_of_menstrual_bleeding_of_pads"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:id="@+id/combop_et_oh_bottom_sheet"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/combop_et_oh_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/light_border"
+            android:backgroundTint="@color/main_color"
+            android:textAllCaps="false"
+            android:textColor="@color/background__"
+            android:id="@+id/save_records_button_oh_bottom_sheet"
+            android:text="@string/save_records"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

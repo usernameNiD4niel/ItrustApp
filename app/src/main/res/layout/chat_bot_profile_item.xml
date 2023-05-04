@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatBotProfileItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp"
+    android:background="@drawable/chat_bot_starla_profile_bg"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_7sdp">
+
+
+    <LinearLayout
+        android:id="@+id/layoutChatBotItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/questionChatBotStarlaProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/unang_madalas_itanong"
+                android:textSize="@dimen/_12ssp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/black_100"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                app:layout_constraintTop_toTopOf="@+id/starChatBotProfileItem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/starChatBotProfileItem"/>
+
+            <ImageView
+                android:id="@+id/starChatBotProfileItem"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_baseline_star_24"
+                android:contentDescription="@string/star"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/answerChatBotStarlaItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae"
+            android:visibility="gone"
+            android:fontFamily="monospace"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background__"
+    android:layout_height="match_parent"
+    tools:context=".medicine_inventory.admin.ReceivedInventoryMedicine">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/overview_textview_inventory_medicine_activity_receive"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/receive_line_1_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/overview_textview_inventory_medicine_activity_receive"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/overview_textview_inventory_medicine_activity_receive"
+            app:layout_constraintBottom_toBottomOf="@+id/overview_textview_inventory_medicine_activity_receive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_text"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/add_textview_inventory_medicine_activity_receive"
+            app:layout_constraintStart_toEndOf="@+id/receive_line_1_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/receive_line_1_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/receive_line_1_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/receive_line_2_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/add_textview_inventory_medicine_activity_receive"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/add_textview_inventory_medicine_activity_receive"
+            app:layout_constraintBottom_toBottomOf="@+id/add_textview_inventory_medicine_activity_receive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/update_textview_inventory_medicine_activity_receive"
+            app:layout_constraintStart_toEndOf="@+id/receive_line_2_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/receive_line_2_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/receive_line_2_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/receive_line_3_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/update_textview_inventory_medicine_activity_receive"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/update_textview_inventory_medicine_activity_receive"
+            app:layout_constraintBottom_toBottomOf="@+id/update_textview_inventory_medicine_activity_receive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/remove_textview_inventory_medicine_activity_receive"
+            app:layout_constraintStart_toEndOf="@+id/receive_line_3_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/receive_line_3_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/receive_line_3_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/receive_line_4_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/remove_textview_inventory_medicine_activity_receive"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/remove_textview_inventory_medicine_activity_receive"
+            app:layout_constraintBottom_toBottomOf="@+id/remove_textview_inventory_medicine_activity_receive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:id="@+id/received_textview_inventory_medicine_activity_receive"
+            app:layout_constraintStart_toEndOf="@+id/receive_line_4_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/receive_line_4_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/receive_line_4_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/received_textview_inventory_medicine_activity_receive"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/patient_name_receive_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="@string/patient_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/patient_name_receive_inventory_medicine"
+                android:id="@+id/medicines_receive_inventory_medicine"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:labelFor="@+id/medicines_text_receive_inventory_medicine"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medicines">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:id="@+id/medicines_text_receive_inventory_medicine"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/quantity_receive_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintEnd_toStartOf="@+id/add_button_receive_inventory_medicine"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/medicines_receive_inventory_medicine"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="@string/quantity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="@string/add_text"
+                android:textAllCaps="true"
+                android:textColor="@color/background__"
+                android:backgroundTint="@color/main_color"
+                android:id="@+id/add_button_receive_inventory_medicine"
+                app:layout_constraintTop_toTopOf="@+id/quantity_receive_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/quantity_receive_inventory_medicine"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/quantity_receive_inventory_medicine"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/medicines"
+            android:textColor="@color/background__"
+            android:paddingVertical="@dimen/_5sdp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toStartOf="@+id/quantity_label_receive_inventory_medicine"
+            android:background="@color/main_color"
+            android:id="@+id/medicines_label_receive_inventory_medicine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:id="@+id/quantity_label_receive_inventory_medicine"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/background__"
+                android:textAlignment="center"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:background="@color/main_color"
+                app:layout_constraintTop_toTopOf="@+id/medicines_label_receive_inventory_medicine"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/medicine_content_receive_inventory_medicine"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="@+id/medicines_label_receive_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/medicines_label_receive_inventory_medicine"
+                app:layout_constraintTop_toBottomOf="@+id/medicines_label_receive_inventory_medicine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/line_dotted"
+                    android:id="@+id/medicines_placeholder_receive_inventory_medicine"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantity_content_receive_inventory_medicine"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="@+id/quantity_label_receive_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/quantity_label_receive_inventory_medicine"
+                app:layout_constraintTop_toBottomOf="@+id/quantity_label_receive_inventory_medicine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quantity_placeholder_receive_inventory_medicine"
+                    android:layout_gravity="center"
+                    android:text="@string/line_dotted"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clear_table"
+                android:textAllCaps="false"
+                android:textColor="@color/background__"
+                android:backgroundTint="@color/error_color"
+                app:layout_constraintEnd_toEndOf="@+id/quantity_label_receive_inventory_medicine"
+                app:layout_constraintTop_toBottomOf="@+id/medicine_content_receive_inventory_medicine"
+                android:id="@+id/clear_table_receive_inventory_medicine"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reason_receive_inventory_medicine"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/clear_table_receive_inventory_medicine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reason_optional">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:id="@+id/add_receive_button_receive_inventory_medicine"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/reason_receive_inventory_medicine"
+                app:layout_constraintStart_toStartOf="@+id/reason_receive_inventory_medicine"
+                app:layout_constraintEnd_toEndOf="@+id/reason_receive_inventory_medicine"
+                android:text="@string/add_received"
+                android:background="@color/main_color"
+                android:textColor="@color/background__"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

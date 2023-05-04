@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background__"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_15sdp"
+    tools:context=".medicine_inventory.user.BarangayMedicine">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:titleMarginStart="@dimen/_40sdp"
+        app:title="Medicine Inventory"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/dark_shadow__"
+        app:logoDescription="@string/itrust_app"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/main_color"
+        android:id="@+id/user_medicine_inventory_toolbar"
+        app:menu="@menu/video_recommendation_menu"/>
+
+    <ImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/ic_arrow_back"
+        android:id="@+id/back_button_barangay_medicine"
+        app:layout_constraintTop_toTopOf="@+id/user_medicine_inventory_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/user_medicine_inventory_toolbar"
+        android:contentDescription="@string/back_button"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_medicine_inventory_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/barangay_medicine_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/recycler_view_barangay_medicine"
+        app:layout_constraintTop_toBottomOf="@+id/user_medicine_inventory_toolbar"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

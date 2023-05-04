@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background__">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/available_schedule"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:transitionName="medicine_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintEnd_toStartOf="@+id/stock_barangay_medicine_item"
+        android:textStyle="bold"
+        android:textColor="@color/primary__"
+        android:id="@+id/medicine_name_barangay_medicine_item"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stock_barangay_medicine_item"
+        android:text="@string/_1"
+        android:textColor="@color/primary__"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:transitionName="medicine_stock"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/description_barangay_medicine_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/description_barangay_medicine_item"
+        android:text="@string/exercise_and_physical_activity_during_pregnancy"
+        android:textColor="@color/primary__"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_12ssp"
+        android:transitionName="medicine_description"
+        app:layout_constraintEnd_toStartOf="@+id/stock_barangay_medicine_item"
+        android:textStyle="normal"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_name_barangay_medicine_item"
+        app:layout_constraintStart_toStartOf="@+id/medicine_name_barangay_medicine_item"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/primary__"
+        app:layout_constraintTop_toBottomOf="@+id/description_barangay_medicine_item"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

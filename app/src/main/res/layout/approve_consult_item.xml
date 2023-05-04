@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/background__"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:layout_gravity="start">
+
+            <TextView
+                android:id="@+id/scheduleOfConsultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monday_9_00am"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/poppins_medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/patientName"
+                android:textColor="@color/main_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/daniel_rey"
+                android:textSize="@dimen/_12ssp"/>
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_approve"
+        android:contentDescription="@string/approved"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/_15sdp"/>
+
+</androidx.cardview.widget.CardView>

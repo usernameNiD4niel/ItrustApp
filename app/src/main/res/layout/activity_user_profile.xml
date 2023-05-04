@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainConstraintParent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".UserProfileActivity">
+    
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_activity_user_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/main_color">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/img_back"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/back_button"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/logoImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:contentDescription="@string/company_logo"
+                    android:src="@drawable/mainone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/profilePicContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/backButton"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePicture"
+                        android:contentDescription="@string/user_profile"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:elevation="@dimen/_10sdp"
+                        app:civ_border_width="@dimen/_3sdp"
+                        app:civ_border_color="@color/main_color"
+                        app:civ_border_overlay="true"
+                        android:src="@drawable/user_avatar_1"/>
+
+                    <TextView
+                        android:id="@+id/userFullname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/daniel_v_rey"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_color"/>
+
+                </LinearLayout>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/profilePicContainer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    style="@style/Widget.Neumorph.CardView">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/primary__"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/personal_information"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#fff"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="30dp"
+                            android:paddingLeft="30dp"
+                            android:background="@color/background__"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/full_name"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/phone_number"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/gender"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/purok_street"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="vertical"
+                                tools:ignore="RelativeOverlap">
+
+                                <TextView
+                                    android:id="@+id/fullName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/daniel_v_rey"/>
+
+                                <TextView
+                                    android:id="@+id/phoneNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/_0987_654_3210"/>
+
+                                <TextView
+                                    android:id="@+id/gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="@string/male"/>
+
+                                <TextView
+                                    android:id="@+id/purok"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/iv"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphContainer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical">
+
+                    <soup.neumorphism.NeumorphButton
+                        android:id="@+id/changePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:text="@string/change_password"
+                        android:textAllCaps="false"
+                        style="@style/Widget.Neumorph.Button"
+                        android:textColor="@color/primary__"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="normal|bold"/>
+
+                    <soup.neumorphism.NeumorphButton
+                        android:id="@+id/deleteAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:text="@string/delete_account"
+                        android:textAllCaps="false"
+                        style="@style/Widget.Neumorph.Button"
+                        android:textColor="@color/error_color"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="normal|bold"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

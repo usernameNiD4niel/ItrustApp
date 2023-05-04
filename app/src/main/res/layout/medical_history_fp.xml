@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textColor="@color/black_100"
+        android:id="@+id/medical_history_label_fp"
+        android:text="@string/medical_history"
+        android:textSize="@dimen/_14ssp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/medical_history_label_fp"
+        app:layout_constraintStart_toStartOf="@+id/medical_history_label_fp"
+        app:layout_constraintEnd_toEndOf="@+id/medical_history_label_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/medical_history_sub_label_fp"
+        android:text="@string/does_the_client_have_any_of_the_following"
+        android:textSize="@dimen/_12ssp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/medical_history_sub_label_fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_1_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_1_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_1_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_1_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_1_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/severe_headaches_migraine"
+        app:layout_constraintTop_toTopOf="@+id/mh_1_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_1_yes"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mh_1_yes"
+        android:id="@+id/mh_1_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/mh_1_no"
+        app:layout_constraintEnd_toEndOf="@id/mh_1_no"
+        android:id="@+id/mh_2_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_2_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_2_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_2_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_2_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/history_if_stroke_heart_attack_hypertension"
+        app:layout_constraintTop_toTopOf="@+id/mh_2_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_2_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_1_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_2_yes"
+        android:id="@+id/mh_2_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_2_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_2_no"
+        android:id="@+id/mh_3_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_3_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_3_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_3_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_3_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/non_traumatic_hematoma_frequent_bruising_or_gum_bleeding"
+        app:layout_constraintTop_toTopOf="@+id/mh_3_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_3_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_2_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_2_yes"
+        android:id="@+id/mh_3_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_3_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_3_no"
+        android:id="@+id/mh_4_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_4_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_4_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_4_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_4_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/current_or_history_of_breast_cancer_breast_mass"
+        app:layout_constraintTop_toTopOf="@+id/mh_4_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_4_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_3_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_4_yes"
+        android:id="@+id/mh_4_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_4_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_4_no"
+        android:id="@+id/mh_5_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_5_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_5_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_5_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_5_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/severe_chest_pain"
+        app:layout_constraintTop_toTopOf="@+id/mh_5_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_5_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_4_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_5_yes"
+        android:id="@+id/mh_5_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_5_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_5_no"
+        android:id="@+id/mh_6_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_6_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_6_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_6_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_6_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/cough_for_more_than_14_days"
+        app:layout_constraintTop_toTopOf="@+id/mh_6_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_6_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_5_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_6_yes"
+        android:id="@+id/mh_6_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_6_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_6_no"
+        android:id="@+id/mh_7_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_7_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_7_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_7_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_7_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/jaundice"
+        app:layout_constraintTop_toTopOf="@+id/mh_7_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_7_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_6_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_7_yes"
+        android:id="@+id/mh_7_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_7_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_7_no"
+        android:id="@+id/mh_8_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_8_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_8_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_8_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_8_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/unexplained_vaginal_bleeding"
+        app:layout_constraintTop_toTopOf="@+id/mh_8_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_8_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_7_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_8_yes"
+        android:id="@+id/mh_8_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_8_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_8_no"
+        android:id="@+id/mh_9_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_9_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_9_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_9_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_9_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/abnormal_vaginal_discharge"
+        app:layout_constraintTop_toTopOf="@+id/mh_9_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_9_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_8_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_9_yes"
+        android:id="@+id/mh_9_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_9_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_9_no"
+        android:id="@+id/mh_10_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_10_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_10_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_10_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_10_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/intake_of_phenobarbital_anti_seizure_or_rifampicin_anti_tb"
+        app:layout_constraintTop_toTopOf="@+id/mh_10_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_10_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_9_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_10_yes"
+        android:id="@+id/mh_10_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_10_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_10_no"
+        android:id="@+id/mh_11_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_11_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_11_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_11_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_11_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/is_the_client_a_smoker"
+        app:layout_constraintTop_toTopOf="@+id/mh_11_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_11_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_10_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_11_yes"
+        android:id="@+id/mh_11_question"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/mh_11_no"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/mh_11_no"
+        android:id="@+id/mh_12_no"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/mh_12_no"
+        app:layout_constraintTop_toTopOf="@+id/mh_12_no"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_12_no"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mh_12_yes"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:text="@string/with_disability"
+        app:layout_constraintTop_toTopOf="@+id/mh_12_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/mh_12_yes"
+        app:layout_constraintStart_toStartOf="@id/mh_11_question"
+        app:layout_constraintEnd_toStartOf="@+id/mh_12_yes"
+        android:id="@+id/mh_12_question"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/mh_12_question"
+        android:layout_marginStart="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/if_yes_please_specify"
+        android:id="@+id/with_disability_fp"
+        android:inputType="text"
+        android:fontFamily="@font/poppins_medium"
+        android:autofillHints="name"
+        app:layout_constraintTop_toBottomOf="@+id/mh_12_question"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

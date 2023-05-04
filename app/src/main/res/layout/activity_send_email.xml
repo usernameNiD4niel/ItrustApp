@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SendEmailActivity">
+
+    <ImageView
+        android:id="@+id/backButtonSenEmail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/img_back"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iconLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/ic_email"
+        app:layout_constraintTop_toBottomOf="@+id/backButtonSenEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/contentSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/iconLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/receiverEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:textColor="@color/main_color"
+                android:enabled="false"
+                android:textColorHint="@color/main_color"
+                android:text="@string/barangayalawihaoofficial_gmail_com"
+                android:textSize="13sp"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subject"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tungkol_saan_ang_tanong_mo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:textSize="13sp"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/message"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mensahe">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:lines="7"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:textSize="13sp"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/contentSendEmail"
+        app:layout_constraintStart_toStartOf="@+id/contentSendEmail"
+        app:layout_constraintEnd_toEndOf="@+id/contentSendEmail"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

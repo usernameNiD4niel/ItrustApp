@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/chat_bot_ai_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/icon_chat_bot_ai"
+        android:text="@string/date_of_birth_10_25_2000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:maxWidth="@dimen/_190sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:padding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_10ssp"
+        android:background="@drawable/message_admin_etbg"
+        android:textColor="@color/light_shadow__"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_chat_bot_ai"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/user_avatar_1"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:civ_border_overlay="true"
+        app:civ_border_color="@color/main_color"
+        app:civ_border_width="@dimen/_2sdp"
+        android:elevation="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/company_sub_logo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/main_color"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/medicine_name"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/medicine_name_label_medicine_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/medicine_name_label_medicine_history"
+            app:layout_constraintTop_toTopOf="@+id/medicine_name_label_medicine_history"
+            android:text="@string/aspirin"
+            android:textColor="@color/background__"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/medicine_name_text_medicine_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_name_label_medicine_history"
+            app:layout_constraintStart_toStartOf="@+id/medicine_name_label_medicine_history"
+            android:text="@string/stock"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/background__"
+            android:id="@+id/label_stock_medicine_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/label_stock_medicine_history"
+            app:layout_constraintTop_toTopOf="@+id/label_stock_medicine_history"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/_1_233"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/stock_text_medicine_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            app:layout_constraintTop_toBottomOf="@+id/label_stock_medicine_history"
+            app:layout_constraintStart_toStartOf="@+id/label_stock_medicine_history"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/description_label_medicine_history"/>
+
+        <TextView
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/description_label_medicine_history"
+            android:textColor="@color/background__"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque"
+            app:layout_constraintTop_toTopOf="@+id/description_label_medicine_history"
+            android:id="@+id/description_text_medicine_history"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_use"
+            app:layout_constraintTop_toBottomOf="@+id/description_text_medicine_history"
+            app:layout_constraintStart_toStartOf="@+id/description_label_medicine_history"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/how_to_use_label_medicine_history"/>
+
+        <TextView
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/how_to_use_label_medicine_history"
+            app:layout_constraintTop_toTopOf="@+id/how_to_use_label_medicine_history"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/background__"
+            android:id="@+id/how_to_use_text_medicine_history"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/when_to_use"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_use_text_medicine_history"
+            app:layout_constraintStart_toStartOf="@+id/how_to_use_label_medicine_history"
+            android:textColor="@color/background__"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/when_to_use_label_medicine_history"/>
+
+        <TextView
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/when_to_use_label_medicine_history"
+            app:layout_constraintTop_toTopOf="@+id/when_to_use_label_medicine_history"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque_ipsa_eius_similique_a_sed_voluptatibus_rem_numquam_aperiam_distinctio_laborum_quas_molestiae_lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_inventore_reprehenderit_dicta_quam_eos_corrupti_sapiente_quidem_doloremque"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textColor="@color/background__"
+            android:id="@+id/when_to_use_text_medicine_history"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

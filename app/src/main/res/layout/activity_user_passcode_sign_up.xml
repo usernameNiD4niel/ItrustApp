@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UserPasscodeSignUp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/user_avatar_1"
+        android:id="@+id/user_profile_passcode_signup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/enter_pin_passcode_signup"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_new_4_digit_pin"
+        android:id="@+id/enter_pin_passcode_signup"
+        app:layout_constraintBottom_toTopOf="@+id/text_container_pass_field_signup"
+        app:layout_constraintStart_toStartOf="@+id/text_container_pass_field_signup"
+        app:layout_constraintEnd_toEndOf="@+id/text_container_pass_field_signup"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_12ssp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:id="@+id/text_container_pass_field_signup"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@id/user_profile_passcode_signup"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard_numerals_passcode_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/perfect_round_button"
+            android:backgroundTint="@color/dark_shadow__"
+            android:id="@+id/text_one_passcode_signup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_two_passcode_signup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/perfect_round_button"
+            android:backgroundTint="@color/dark_shadow__"
+            android:id="@+id/text_two_passcode_signup"
+            app:layout_constraintEnd_toStartOf="@+id/text_three_passcode_signup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_one_passcode_signup"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/perfect_round_button"
+            android:backgroundTint="@color/dark_shadow__"
+            android:id="@+id/text_three_passcode_signup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_four_passcode_signup"
+            app:layout_constraintStart_toEndOf="@+id/text_two_passcode_signup"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/perfect_round_button"
+            android:backgroundTint="@color/dark_shadow__"
+            android:id="@+id/text_four_passcode_signup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_three_passcode_signup"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/keyboard_numerals_passcode_signup"
+        app:layout_constraintTop_toBottomOf="@+id/text_container_pass_field_signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/one_button_signup"
+            android:text="@string/_1"
+            app:layout_constraintEnd_toStartOf="@+id/two_button_signup"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toEndOf="@+id/one_button_signup"
+            app:layout_constraintEnd_toStartOf="@+id/three_button_signup"
+            app:layout_constraintTop_toTopOf="@+id/one_button_signup"
+            android:id="@+id/two_button_signup"
+            android:text="@string/_2"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/one_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toEndOf="@+id/two_button_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/two_button_signup"
+            android:id="@+id/three_button_signup"
+            android:text="@string/_3"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/two_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/five_button_signup"
+            app:layout_constraintTop_toBottomOf="@+id/one_button_signup"
+            android:id="@+id/four_button_signup"
+            android:text="@string/_4"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/seven_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toEndOf="@+id/four_button_signup"
+            app:layout_constraintEnd_toStartOf="@+id/six_button_signup"
+            app:layout_constraintTop_toTopOf="@+id/four_button_signup"
+            android:id="@+id/five_button_signup"
+            android:text="@string/_5"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/four_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toEndOf="@+id/five_button_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/five_button_signup"
+            android:id="@+id/six_button_signup"
+            android:text="@string/_6"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/five_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/eight_button_signup"
+            app:layout_constraintTop_toBottomOf="@+id/four_button_signup"
+            android:id="@+id/seven_button_signup"
+            android:text="@string/_7"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/zero_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toEndOf="@+id/seven_button_signup"
+            app:layout_constraintEnd_toStartOf="@+id/nine_button_signup"
+            app:layout_constraintTop_toTopOf="@+id/seven_button_signup"
+            android:id="@+id/eight_button_signup"
+            android:text="@string/_8"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seven_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintStart_toEndOf="@+id/eight_button_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/eight_button_signup"
+            android:id="@+id/nine_button_signup"
+            android:text="@string/_9"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/eight_button_signup"
+            android:background="@drawable/perfect_round_button"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="@dimen/_70sdp"
+            app:layout_constraintEnd_toEndOf="@+id/eight_button_signup"
+            app:layout_constraintStart_toStartOf="@+id/eight_button_signup"
+            app:layout_constraintTop_toBottomOf="@+id/eight_button_signup"
+            android:id="@+id/zero_button_signup"
+            android:text="@string/_0"
+            android:textColor="@color/secondary_text__"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/perfect_round_button"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_baseline_close_24"
+            android:id="@+id/remove_button_passcode_signup"
+            app:layout_constraintTop_toBottomOf="@+id/nine_button_signup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/nine_button_signup"
+            app:layout_constraintEnd_toEndOf="@id/nine_button_signup"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

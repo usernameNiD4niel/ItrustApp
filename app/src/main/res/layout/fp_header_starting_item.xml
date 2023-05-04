@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/family_planning_client_assessment_record"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/_13ssp"
+        android:id="@+id/fpcar_label_add__form_fp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fp_content_text_add_form_fp"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@+id/fpcar_label_add__form_fp"
+        app:layout_constraintStart_toStartOf="@+id/fpcar_label_add__form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/fpcar_label_add__form_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/instruction_for_physicians_nurses_and_midwives"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/client_id_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fp_content_text_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/fp_content_text_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/fp_content_text_add_form_fp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:hint="@string/client_id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/client_id_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phil_id_label_add_form_fp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/client_id_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/client_id_label_add_form_fp"
+        app:layout_constraintEnd_toEndOf="@+id/client_id_label_add_form_fp"
+        android:hint="@string/philhealth_no">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:inputType="number"
+            android:id="@+id/phil_id_add_form_fp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nhts"
+        app:layout_constraintTop_toBottomOf="@+id/phil_id_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/phil_id_label_add_form_fp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="@dimen/_3sdp"
+        android:textColor="@color/black_100"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/nhts_label_add_form_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/nhts_label_add_form_fp"
+        app:layout_constraintTop_toTopOf="@+id/nhts_label_add_form_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/nhts_label_add_form_fp"
+        android:text="@string/yes"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/nhts_yes_add_form_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/nhts_yes_add_form_fp"
+        app:layout_constraintTop_toTopOf="@+id/nhts_yes_add_form_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/nhts_yes_add_form_fp"
+        android:text="@string/no_prompt"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/nhts_no_add_form_fp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pantawid_pamilya_pilipino_program_4ps"
+        app:layout_constraintTop_toBottomOf="@+id/nhts_label_add_form_fp"
+        app:layout_constraintStart_toStartOf="@+id/nhts_label_add_form_fp"
+        app:layout_constraintEnd_toStartOf="@+id/fourPs_yes_add_form_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="@dimen/_3sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/fourPs_label_add_form_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/fourPs_no_add_form_fp"
+        app:layout_constraintTop_toTopOf="@+id/fourPs_no_add_form_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/fourPs_no_add_form_fp"
+        android:text="@string/yes"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/fourPs_yes_add_form_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fourPs_label_add_form_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/fourPs_label_add_form_fp"
+        android:text="@string/no_prompt"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/fourPs_no_add_form_fp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

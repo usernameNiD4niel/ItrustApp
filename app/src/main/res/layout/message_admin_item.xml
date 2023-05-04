@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background__"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/smallProfileImageAdmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:civ_border_width="@dimen/_1sdp"
+        app:civ_border_color="@color/main_color"
+        android:src="@drawable/darna_final"/>
+
+    <TextView
+        android:id="@+id/textMessageChatAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@+id/smallProfileImageAdmin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/message_background_chat"
+        android:backgroundTint="@color/secondary_text__"
+        android:maxWidth="@dimen/_180sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/daniel_rey"
+        android:textColor="@color/background__" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

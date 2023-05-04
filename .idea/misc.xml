@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/approve_consult_background.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/approve_rounded_button.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/circle_button.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/custom_bottom.xml" value="0.1" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/decline_rounded_button.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_add.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_approve.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.204" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_decline.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.125" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_messenger.xml" value="0.1855" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/ic_send.xml" value="0.147" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/main_logo.xml" value="0.204" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/message_admin_etbg.xml" value="0.1855" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/message_background_chat.xml" value="0.1855" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/message_background_chat_receive.xml" value="0.128" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/normal_state_btn_rounded.xml" value="0.187" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/rounded.xml" value="0.1455" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/rounded_button_bg.xml" value="0.187" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/drawable/rounded_link.xml" value="0.1105" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout-v28/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/accessible_user_item.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_add_accessible_user.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admin_consultation_schedule.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admin_drawer_base.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admin_list_of_users.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admin_login.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admin_register.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admins.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_admins_my_profile.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_chatbot.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_chatbot_history.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_consultation_schedule.xml" value="0.2359375" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_for_testing_purposes.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_login_signup.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_main_user_ui.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_main_user_ui_chatbot.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_message.xml" value="0.2" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_onboarding_one.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_passcode.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_send_email.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_about_us.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_chatbot.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_consult.xml" value="0.24635416666666668" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_consult_magpakunsulta.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_more_help_fragment.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_otp.xml" value="0.2" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_passcode.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_passcode_sign_up.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/activity_user_profile.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/admin_list_row.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/admin_logout_alert.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/admins_recycler_row.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/approve_consult_item.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/bot_button_message.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/bot_message_recyclerview_item.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/bot_message_view.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/chat_history_recycler_row.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/content_layout.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/decline_consult_item.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/fragment_admin_consultation_approved.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/fragment_admin_consultation_declined.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/fragment_admin_consultation_pending.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/fragment_user_chatbot.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/fragment_user_home.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/fragment_user_more.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/magpakunsulta_spinner_item.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/main_drawer_header.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/message_background_chat.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/messages_row_layout.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/pending_consult_item.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/sample.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/signup_gender_list.xml" value="0.20512820512820512" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/slides_layout.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/user_home_header.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/user_home_items.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/user_message_recyclerview_item.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/user_message_view.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/user_profile_changepassword_dialog.xml" value="0.1" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/layout/user_profile_dialog.xml" value="0.264" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/menu/main_drawer_menu.xml" value="0.25" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1865" />
+        <entry key="..\:/ITrustApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1865" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

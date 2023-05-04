@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/obstetrical_history"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black_100"
+        android:textStyle="bold"
+        android:id="@+id/obstetrical_history_label_fp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/nop_et_fp"
+        android:text="@string/number_of_pregnancies"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toTopOf="@+id/nop_et_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/nop_et_fp"
+        android:textColor="@color/black_100"
+        android:id="@+id/nop_label_fp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obstetrical_history_label_fp"
+        android:hint="@string/g_p"
+        android:fontFamily="@font/poppins_medium"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:id="@+id/nop_et_fp"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/nop_label_fp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:hint="@string/full_term"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@+id/nop_label_fp"
+        android:autofillHints="name"
+        android:inputType="number"
+        android:id="@+id/nop_full_term_et_fp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/nop_full_term_et_fp"
+        app:layout_constraintTop_toBottomOf="@+id/nop_full_term_et_fp"
+        android:hint="@string/abortion"
+        android:fontFamily="@font/poppins_medium"
+        android:autofillHints="name"
+        android:inputType="number"
+        android:id="@+id/nop_abortion_et_fp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/nop_full_term_et_fp"
+        app:layout_constraintTop_toTopOf="@+id/nop_full_term_et_fp"
+        app:layout_goneMarginStart="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:hint="@string/premature"
+        android:fontFamily="@font/poppins_medium"
+        android:autofillHints="name"
+        android:inputType="number"
+        android:id="@+id/nop_premature_et_fp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/nop_premature_et_fp"
+        app:layout_constraintTop_toTopOf="@+id/nop_abortion_et_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/nop_abortion_et_fp"
+        android:hint="@string/living_children"
+        android:fontFamily="@font/poppins_medium"
+        android:autofillHints="name"
+        android:inputType="number"
+        android:id="@+id/nop_living_children_et_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_last_delivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dold_et_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/dold_et_fp"
+        android:id="@+id/dold_label_fp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/_02_26_2023"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/nop_abortion_et_fp"
+        android:autofillHints="name"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/dold_label_fp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/dold_et_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_of_last_delivery"
+        app:layout_constraintTop_toBottomOf="@id/dold_label_fp"
+        app:layout_constraintStart_toStartOf="@+id/dold_label_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/told_label_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/told_label_fp"
+        app:layout_constraintTop_toTopOf="@id/told_label_fp"
+        android:text="@string/vaginal"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toEndOf="@+id/dold_label_fp"
+        android:id="@+id/told_vaginal_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@+id/told_vaginal_fp"
+        app:layout_constraintStart_toStartOf="@+id/told_vaginal_fp"
+        android:text="@string/cesarean_section"
+        android:id="@+id/told_cs_fp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/told_label_fp"
+        app:layout_constraintTop_toBottomOf="@+id/told_cs_fp"
+        android:text="@string/last_menstrual_period"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/lmp_label_fp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:hint="@string/_02_26_2023"
+        app:layout_constraintStart_toEndOf="@id/lmp_label_fp"
+        app:layout_constraintTop_toTopOf="@+id/lmp_label_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/lmp_label_fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:id="@+id/lmp_et_fp"
+        android:autofillHints="name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/lmp_label_fp"
+        app:layout_constraintTop_toBottomOf="@+id/lmp_label_fp"
+        android:text="@string/period_menstrual_previous"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        android:id="@+id/pmp_label_fp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:hint="@string/_02_26_2023"
+        app:layout_constraintStart_toEndOf="@id/pmp_label_fp"
+        app:layout_constraintTop_toTopOf="@+id/pmp_label_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/pmp_label_fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:id="@+id/pmp_et_fp"
+        android:autofillHints="name"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pmp_label_fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/menstrual_flow"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/black_100"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/mf_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scanty_1_2_pads_per_day"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/mf_fp"
+        app:layout_constraintStart_toStartOf="@id/mf_fp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/scanty_mf_check_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moderate_3_5_pads_per_day"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/scanty_mf_check_fp"
+        app:layout_constraintStart_toStartOf="@id/scanty_mf_check_fp"
+        android:id="@+id/moderate_mf_check_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heavy_5_per_pads_day"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/moderate_mf_check_fp"
+        app:layout_constraintStart_toStartOf="@id/moderate_mf_check_fp"
+        android:id="@+id/heavy_mf_check_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dysmenorrhea"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/heavy_mf_check_fp"
+        app:layout_constraintStart_toStartOf="@id/mf_fp"
+        android:id="@+id/dysmenorrhea_check_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hydatidiform_mole_with_the_last_12_months"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/dysmenorrhea_check_fp"
+        app:layout_constraintStart_toStartOf="@id/dysmenorrhea_check_fp"
+        android:id="@+id/hydatidiform_check_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_of_ectopic_pregnancy"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/hydatidiform_check_fp"
+        app:layout_constraintStart_toStartOf="@id/hydatidiform_check_fp"
+        android:id="@+id/history_of_ectopic_pregnancy_check_fp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

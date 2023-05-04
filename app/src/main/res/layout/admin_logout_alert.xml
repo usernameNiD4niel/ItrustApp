@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    android:layout_margin="5dp"
+    android:background="@color/background__">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/titleHeaderLogout"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/are_you_sure_you_want_to_logout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/main_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/logoutTextContent"
+            android:layout_width="290dp"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:text="@string/kapag_naglogout_ka_mapupunta_ka_sa_admin_login_form"
+            app:layout_constraintTop_toBottomOf="@+id/titleHeaderLogout"
+            app:layout_constraintStart_toStartOf="@+id/titleHeaderLogout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/logoutTextContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/logoutButtonAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                style="?android:attr/buttonBarStyle"
+                android:textSize="12sp"
+                android:text="@string/yes_logged_me_out"
+                android:textColor="@color/white"
+                android:background="@drawable/normal_state_btn_rounded" />
+
+            <Button
+                android:id="@+id/cancelLogoutAdmin"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@color/main_color"
+                android:background="#00000000"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

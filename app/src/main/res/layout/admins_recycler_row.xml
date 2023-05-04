@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/background__"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="9dp">
+
+        <ImageView
+            android:id="@+id/adminImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="40dp"
+            android:contentDescription="@string/company_logo"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/adminavatar"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/admin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/adminImageView"
+            android:textSize="13sp"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/admin_name_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/admin_name"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/admin_name"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/daniel_rey"/>
+
+        <TextView
+            android:id="@+id/admin_username_label"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/admin_name"
+            app:layout_constraintTop_toBottomOf="@+id/admin_name"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/username_admins"/>
+
+        <TextView
+            android:id="@+id/admin_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintStart_toEndOf="@+id/admin_username_label"
+            app:layout_constraintTop_toTopOf="@+id/admin_username_label"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/daniel_v_rey"/>
+
+        <TextView
+            android:id="@+id/admin_created_label"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/admin_username_label"
+            app:layout_constraintTop_toBottomOf="@+id/admin_username_label"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:text="@string/account_created"/>
+
+        <TextView
+            android:id="@+id/admin_created_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/admin_created_label"
+            app:layout_constraintTop_toTopOf="@+id/admin_created_label"
+            android:text="@string/aug_13_2022"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

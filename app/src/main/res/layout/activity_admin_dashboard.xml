@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".AdminDashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/greetDashBoard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color_300"
+                android:fontFamily="monospace"
+                android:textSize="@dimen/_11ssp"
+                android:text="@string/good_day"/>
+
+            <TextView
+                android:id="@+id/currentUserDashboard"
+                android:layout_width="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                android:text="@string/daniel_rey"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/numberOfAccountsParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/greetDashBoard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/numberOfConsultationParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_15sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/numberOfAccountsRegisteredImage"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/number_of_accounts"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/numberOfAccountsDashboardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="@dimen/_11ssp"
+                    android:textColor="@color/main_color"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/numberOfAccountsRegisteredImage"
+                    app:layout_constraintStart_toStartOf="@+id/numberOfAccountsRegisteredImage"
+                    app:layout_constraintEnd_toEndOf="@+id/numberOfAccountsRegisteredImage"/>
+
+                <TextView
+                    android:id="@+id/numberOfAccountsDashboardContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_accounts_registered"
+                    android:textStyle="normal"
+                    android:fontFamily="monospace"
+                    android:textSize="@dimen/_9ssp"
+                    android:textColor="@color/main_color"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/numberOfAccountsDashboardTitle"
+                    app:layout_constraintStart_toStartOf="@+id/numberOfAccountsDashboardTitle"
+                    app:layout_constraintEnd_toEndOf="@+id/numberOfAccountsDashboardTitle"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/numberOfConsultationParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/greetDashBoard"
+            app:layout_constraintStart_toEndOf="@+id/numberOfAccountsParent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/numberOfAccountsParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/accessibleUserParent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_15sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/numberOfConsultationImage"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/interview_svgrepo_com"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/numberOfConsultationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textStyle="bold"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintTop_toBottomOf="@+id/numberOfConsultationImage"
+                    app:layout_constraintStart_toStartOf="@+id/numberOfConsultationImage"
+                    app:layout_constraintEnd_toEndOf="@+id/numberOfConsultationImage"/>
+
+                <TextView
+                    android:id="@+id/numberOfConsultationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_claimed_medicine"
+                    android:fontFamily="monospace"
+                    android:textStyle="normal"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_9ssp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/numberOfConsultationTitle"
+                    app:layout_constraintStart_toStartOf="@+id/numberOfConsultationTitle"
+                    app:layout_constraintEnd_toEndOf="@+id/numberOfConsultationTitle"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/accessibleUserParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfAccountsParent"
+            app:layout_constraintStart_toStartOf="@+id/numberOfAccountsParent"
+            app:layout_constraintEnd_toEndOf="@+id/numberOfConsultationParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_15sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/accessibleUserIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_baseline_star_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/starla_rate"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toEndOf="@+id/accessibleUserIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/starlaRateDashBoard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="normal"
+                    android:text="@string/_0"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_15ssp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/numberOfAdminsParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/accessibleUserParent"
+            app:layout_constraintStart_toStartOf="@+id/accessibleUserParent"
+            app:layout_constraintEnd_toEndOf="@+id/accessibleUserParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_9sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/numberOfAdminsIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/number_of_admin_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_admins"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toEndOf="@+id/numberOfAdminsIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/numberOfAdminDashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="normal"
+                    android:text="@string/_0"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_15ssp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pendingConsultationParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfAdminsParent"
+            app:layout_constraintStart_toStartOf="@+id/numberOfAdminsParent"
+            app:layout_constraintEnd_toEndOf="@+id/numberOfAdminsParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_9sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pendingConsultationIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/pending_schedule_svg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_pending_schedule"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toEndOf="@+id/pendingConsultationIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/pendingRequestDashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="normal"
+                    android:text="@string/_0"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_15ssp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/approveConsultationParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/pendingConsultationParent"
+            app:layout_constraintStart_toStartOf="@+id/pendingConsultationParent"
+            app:layout_constraintEnd_toEndOf="@+id/pendingConsultationParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_9sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/approveConsultationIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/approve_invoice_svg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_approve_schedule"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toEndOf="@+id/approveConsultationIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/approvedScheduleDashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="normal"
+                    android:text="@string/_0"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_15ssp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/declineConsultationParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/approveConsultationParent"
+            app:layout_constraintStart_toStartOf="@+id/approveConsultationParent"
+            app:layout_constraintEnd_toEndOf="@+id/approveConsultationParent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_9sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/declineConsultationIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/decline_schedule_svg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_declined_schedule"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toEndOf="@+id/declineConsultationIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/declineConsultationDashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textStyle="normal"
+                    android:text="@string/_0"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_15ssp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/residenceProfileParent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/declineConsultationParent"
+            app:layout_constraintStart_toStartOf="@+id/declineConsultationParent"
+            app:layout_constraintEnd_toEndOf="@+id/declineConsultationParent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:contentPadding="@dimen/_15sdp"
+            android:layout_marginVertical="@dimen/_9sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/residenceProfileIcon"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/residence_profile_svg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/main_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/residence_profile"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/main_color"
+                    app:layout_constraintStart_toEndOf="@+id/residenceProfileIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/img_back"
+                    android:rotation="180"
+                    app:tint="@color/main_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/company_sub_logo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

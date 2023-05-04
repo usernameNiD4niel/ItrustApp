@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_240sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/thumbnail"
+        android:contentDescription="@string/youtube_thumbnail"
+        android:id="@+id/thumbnail_suggested_video_item"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/youtube_thumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnail_suggested_video_item"
+        app:layout_constraintStart_toStartOf="@+id/thumbnail_suggested_video_item"
+        app:layout_constraintEnd_toEndOf="@+id/thumbnail_suggested_video_item"
+        android:textColor="@color/dark_shadow__"
+        android:textStyle="bold"
+        android:layout_marginTop="-20dp"
+        android:textSize="@dimen/_14ssp"
+        android:id="@+id/title_suggested_video_item"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@color/dark_icon__"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/thumbnail_suggested_video_item"
+        android:layout_marginBottom="-20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

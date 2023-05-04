@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/cervical_tenderness"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/ct_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/adnexal_mass_tenderness"
+        app:layout_constraintTop_toBottomOf="@+id/ct_pelvic_examination_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/ct_pelvic_examination_pe_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/amt_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/uterine_position"
+        app:layout_constraintTop_toBottomOf="@+id/amt_pelvic_examination_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/amt_pelvic_examination_pe_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/up_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/mid"
+        app:layout_constraintTop_toBottomOf="@+id/up_pelvic_examination_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/up_pelvic_examination_pe_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/mid_up_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/anteflexed"
+        app:layout_constraintTop_toBottomOf="@+id/mid_up_pelvic_examination_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/mid_up_pelvic_examination_pe_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/anteflexed_up_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/retroflexed"
+        app:layout_constraintTop_toBottomOf="@+id/anteflexed_up_pelvic_examination_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/anteflexed_up_pelvic_examination_pe_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/retroflexed_up_pelvic_examination_pe_fp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/uterine_depth"
+        app:layout_constraintTop_toBottomOf="@+id/retroflexed_up_pelvic_examination_pe_fp"
+        app:layout_constraintStart_toStartOf="@+id/up_pelvic_examination_pe_fp"
+        android:fontFamily="@font/poppins_medium"
+        android:id="@+id/ud_pelvic_examination_pe_fp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cm"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toEndOf="@+id/ud_pelvic_examination_pe_fp"
+        app:layout_constraintTop_toTopOf="@+id/ud_pelvic_examination_pe_fp"
+        app:layout_constraintBottom_toBottomOf="@+id/ud_pelvic_examination_pe_fp"
+        android:inputType="number"
+        android:id="@+id/cm_et_ud_pelvic_examination_pe_fp"
+        android:autofillHints="name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935075277980",
+    "firebase_url": "https://fir-thesis-15f90-default-rtdb.firebaseio.com",
+    "project_id": "fir-thesis-15f90",
+    "storage_bucket": "fir-thesis-15f90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935075277980:android:60f7bb5b2b7c7b18749159",
+        "android_client_info": {
+          "package_name": "com.rey.itrustapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935075277980-aqklb75c94cukkll0hj6a0oa791jrd32.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rey.itrustapplication",
+            "certificate_hash": "eee509d1485b38b8f10d4f8f8139efa1e926133f"
+          }
+        },
+        {
+          "client_id": "935075277980-am4n9mvdpr84v0sql3vq6u2q5ueqobv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaaf31Jlf1kTylGQILylysat_3L5gADdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935075277980-am4n9mvdpr84v0sql3vq6u2q5ueqobv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

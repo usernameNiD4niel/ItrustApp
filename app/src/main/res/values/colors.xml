@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_100">#373737</color>
+    <color name="green">#3DDC84</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="dark_color">#9295A4</color>
+    <color name="dark_color_100">#DDDDDD</color>
+    <color name="circular_color">#DCE0F7</color>
+    <color name="accent_white">#EFEFF3</color>
+    <color name="main_color">#4F66D8</color>
+    <color name="main_color_300">#8092ED</color>
+    <color name="secondary_color">#05B3E3</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="pending_request_color">#ED744E</color>
+    <color name="ngilo">#FFEB3B</color>
+    <color name="error_color">#FF0101</color>
+    <color name="successful_color">#00FF00</color>
+    <color name="successful_color_900">#0CE816</color>
+
+    <color name="home_view_video_primary">#6200EE</color>
+    <color name="home_view_video_dark">#3700B3</color>
+
+<!--    Custom Neumorphism Color-->
+    <color name="primary__">#475DC8</color>
+    <color name="background__">#E4EBF5</color>
+    <color name="primary_text__">#0B0D0C</color>
+    <color name="secondary_text__">#7D818A</color>
+    <color name="dark_shadow__">#CDD5EA</color>
+    <color name="light_shadow__">#F8F9FE</color>
+    <color name="dark_icon__">#212121</color>
+
+<!--    Opacity-->
+    <color name="main_color_opacity">#7F475DC8</color>
+    <color name="dark_color_opacity">#7F0B0D0C</color>
+
+</resources>

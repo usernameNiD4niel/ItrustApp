@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/risk_for_violence_against_women"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/black_100"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:id="@+id/vaw_label_fp_"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/vaw_label_fp_"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:text="@string/no_prompt"
+        android:id="@+id/vaw_check_no_1_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/vaw_check_no_1_fp_"
+        app:layout_constraintTop_toTopOf="@+id/vaw_check_no_1_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/vaw_check_no_1_fp_"
+        android:text="@string/yes"
+        android:id="@+id/vaw_check_yes_1_fp_"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/unpleasant_relationship_with_partner"
+        app:layout_constraintTop_toTopOf="@+id/vaw_check_yes_1_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/vaw_check_yes_1_fp_"
+        app:layout_constraintStart_toStartOf="@+id/vaw_label_fp_"
+        app:layout_constraintEnd_toStartOf="@+id/vaw_check_yes_1_fp_"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/question_1_vaw_fp_"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/vaw_check_no_1_fp_"
+        app:layout_constraintEnd_toEndOf="@+id/vaw_check_no_1_fp_"
+        android:text="@string/no_prompt"
+        android:id="@+id/vaw_check_no_2_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/vaw_check_no_2_fp_"
+        app:layout_constraintTop_toTopOf="@+id/vaw_check_no_2_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/vaw_check_no_2_fp_"
+        android:text="@string/yes"
+        android:id="@+id/vaw_check_yes_2_fp_"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/partner_does_not_approve_of_the_visit_to_fp_clinic"
+        app:layout_constraintTop_toTopOf="@+id/vaw_check_yes_2_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/vaw_check_yes_2_fp_"
+        app:layout_constraintStart_toStartOf="@+id/question_1_vaw_fp_"
+        app:layout_constraintEnd_toStartOf="@+id/vaw_check_yes_2_fp_"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/question_2_vaw_fp_"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/vaw_check_no_2_fp_"
+        app:layout_constraintEnd_toEndOf="@+id/vaw_check_no_2_fp_"
+        android:text="@string/no_prompt"
+        android:id="@+id/vaw_check_no_3_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/vaw_check_no_3_fp_"
+        app:layout_constraintTop_toTopOf="@+id/vaw_check_no_3_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/vaw_check_no_3_fp_"
+        android:text="@string/yes"
+        android:id="@+id/vaw_check_yes_3_fp_"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/history_of_domestic_violence_or_vaw"
+        app:layout_constraintTop_toTopOf="@+id/vaw_check_yes_3_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/vaw_check_yes_3_fp_"
+        app:layout_constraintStart_toStartOf="@+id/question_2_vaw_fp_"
+        app:layout_constraintEnd_toStartOf="@+id/vaw_check_yes_3_fp_"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_100"
+        android:id="@+id/question_3_vaw_fp_"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/referred_to"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintStart_toStartOf="@+id/question_3_vaw_fp_"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/question_3_vaw_fp_"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/referred_to_vaw_fp_"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/referred_to_vaw_fp_"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@+id/referred_to_vaw_fp_"
+        app:layout_constraintBottom_toBottomOf="@+id/referred_to_vaw_fp_"
+        android:text="@string/dswd"
+        android:id="@+id/referred_tp_dswd_vaw_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/referred_tp_dswd_vaw_fp_"
+        app:layout_constraintStart_toStartOf="@+id/referred_tp_dswd_vaw_fp_"
+        android:text="@string/wcpu"
+        android:id="@+id/referred_tp_wcpu_vaw_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/referred_tp_wcpu_vaw_fp_"
+        app:layout_constraintStart_toStartOf="@+id/referred_tp_wcpu_vaw_fp_"
+        android:text="@string/ngos"
+        android:id="@+id/referred_tp_ngos_vaw_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/referred_tp_ngos_vaw_fp_"
+        app:layout_constraintStart_toStartOf="@+id/referred_tp_ngos_vaw_fp_"
+        android:text="@string/others"
+        android:id="@+id/referred_tp_others_vaw_fp_"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/referred_tp_others_vaw_fp_"
+        app:layout_constraintStart_toEndOf="@+id/referred_tp_others_vaw_fp_"
+        app:layout_constraintEnd_toEndOf="@id/vaw_check_no_3_fp_"
+        android:hint="@string/specify"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:id="@+id/others_et_vaw_fp_"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

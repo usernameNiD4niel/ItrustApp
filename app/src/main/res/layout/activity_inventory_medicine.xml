@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background__"
+    tools:context=".medicine_inventory.admin.InventoryMedicine">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingVertical="@dimen/_10sdp"
+        android:id="@+id/parent_overview_inventory_medicine"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/overview_textview_inventory_medicine_activity"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/line_1_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/overview_textview_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/overview_textview_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/overview_textview_inventory_medicine_activity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_text"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/add_textview_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/line_1_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/line_1_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/line_1_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/line_2_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/add_textview_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/add_textview_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/add_textview_inventory_medicine_activity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/update_textview_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/line_2_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/line_2_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/line_2_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/line_3_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/update_textview_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/update_textview_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/update_textview_inventory_medicine_activity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/remove_textview_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/line_3_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/line_3_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/line_3_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <View
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@color/secondary_text__"
+            android:id="@+id/line_4_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/remove_textview_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="@+id/remove_textview_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/remove_textview_inventory_medicine_activity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/main_color_300"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:id="@+id/received_textview_inventory_medicine_activity"
+            app:layout_constraintStart_toEndOf="@+id/line_4_inventory_medicine_activity"
+            app:layout_constraintTop_toTopOf="@+id/line_4_inventory_medicine_activity"
+            app:layout_constraintBottom_toBottomOf="@+id/line_4_inventory_medicine_activity"
+            android:layout_marginStart="@dimen/_5sdp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:id="@+id/card_view_inventory_medicine_activity"
+            app:cardElevation="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/accent_white"
+            app:cardPreventCornerOverlap="true"
+            app:layout_constraintTop_toBottomOf="@+id/overview_textview_inventory_medicine_activity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/_13ssp"
+                android:paddingVertical="@dimen/_15sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:text="@string/number_of_medicine"
+                android:textStyle="bold"
+                android:textColor="@color/black_100"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_233"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:id="@+id/number_of_medicine_inventory_medicine"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black_100"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/received_history_inventory_medicine_activity"
+            android:text="@string/received_history"
+            app:layout_constraintStart_toStartOf="@id/card_view_inventory_medicine_activity"
+            app:layout_constraintTop_toBottomOf="@id/card_view_inventory_medicine_activity"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all"
+            app:layout_constraintTop_toTopOf="@+id/received_history_inventory_medicine_activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="@color/main_color"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/view_all_received_history_overview_inventory_medicine"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/card_view_1_inventory_medicine_activity"
+            app:cardUseCompatPadding="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/main_color"
+            app:layout_constraintTop_toBottomOf="@+id/received_history_inventory_medicine_activity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aspirin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:id="@+id/medicine_text_inventory_medicine_activity"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/medicine_text_inventory_medicine_activity"
+                    android:text="@string/daniel_v_rey"
+                    android:id="@+id/patient_name_overview_inventory_medicine"
+                    android:textColor="@color/background__"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/medicine_text_inventory_medicine_activity"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:text="@string/_02_26_2023"
+                android:id="@+id/date_received_inventory_medicine_activity"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/background__"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:id="@+id/card_view_2_inventory_medicine_activity"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/main_color"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_1_inventory_medicine_activity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aspirin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:id="@+id/medicine_text_2_inventory_medicine_activity"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/medicine_text_2_inventory_medicine_activity"
+                    android:text="@string/daniel_v_rey"
+                    android:id="@+id/patient_name_overview_inventory_medicine_2"
+                    android:textColor="@color/background__"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/medicine_text_2_inventory_medicine_activity"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:id="@+id/date_received_inventory_medicine_2"
+                android:text="@string/_02_26_2023"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/background__"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:id="@+id/card_view_3_inventory_medicine_activity"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/main_color"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_2_inventory_medicine_activity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aspirin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:id="@+id/medicine_text_3_inventory_medicine_activity"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/medicine_text_3_inventory_medicine_activity"
+                    android:text="@string/daniel_v_rey"
+                    android:textColor="@color/background__"
+                    android:id="@+id/patient_name_overview_inventory_medicine_3"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/medicine_text_3_inventory_medicine_activity"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:id="@+id/date_received_inventory_medicine_3"
+                android:text="@string/_02_26_2023"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/background__"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/recent_added_inventory_medicine_activity"
+            android:text="@string/recent_added_medicine"
+            app:layout_constraintStart_toStartOf="@id/card_view_3_inventory_medicine_activity"
+            app:layout_constraintTop_toBottomOf="@id/card_view_3_inventory_medicine_activity"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all"
+            app:layout_constraintTop_toTopOf="@+id/recent_added_inventory_medicine_activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="@color/main_color"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/view_all_recent_added_overview_inventory_medicine"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/card_view_1_1_inventory_medicine_activity"
+            app:cardUseCompatPadding="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/home_view_video_dark"
+            app:layout_constraintTop_toBottomOf="@+id/recent_added_inventory_medicine_activity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/recent_added_medicine_text_inventory_medicine_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/aspirin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/background__"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxWidth="@dimen/_190sdp"
+                    android:text="@string/daniel_v_rey"
+                    android:id="@+id/description_overview_inventory_medicine"
+                    android:textColor="@color/background__"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/recent_added_medicine_text_inventory_medicine_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/recent_added_medicine_text_inventory_medicine_activity" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:text="@string/_02_26_2023"
+                android:id="@+id/recent_added_date_received_inventory_medicine_activity"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/background__"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/card_view_2_2_inventory_medicine_activity"
+            app:cardUseCompatPadding="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/home_view_video_dark"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_1_1_inventory_medicine_activity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aspirin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:id="@+id/recent_added_medicine_text_inventory_medicine_activity_2"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/recent_added_medicine_text_inventory_medicine_activity_2"
+                    android:text="@string/daniel_v_rey"
+                    android:textColor="@color/background__"
+                    android:id="@+id/description_overview_inventory_medicine_2"
+                    android:maxWidth="@dimen/_190sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/recent_added_medicine_text_inventory_medicine_activity_2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:text="@string/_02_26_2023"
+                android:id="@+id/recent_added_date_received_inventory_medicine_activity_2"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/background__"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/card_view_3_3_inventory_medicine_activity"
+            app:cardUseCompatPadding="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/home_view_video_dark"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_2_2_inventory_medicine_activity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aspirin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/background__"
+                    android:textStyle="bold"
+                    android:id="@+id/recent_added_medicine_text_inventory_medicine_activity_3"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/recent_added_medicine_text_inventory_medicine_activity_3"
+                    android:text="@string/daniel_v_rey"
+                    android:textColor="@color/background__"
+                    android:maxWidth="@dimen/_190sdp"
+                    android:id="@+id/description_overview_inventory_medicine_3"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="@+id/recent_added_medicine_text_inventory_medicine_activity_3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:text="@string/_02_26_2023"
+                android:id="@+id/recent_added_date_received_inventory_medicine_activity_3"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/background__"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

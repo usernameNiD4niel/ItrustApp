@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/background__"
+    android:padding="@dimen/_10sdp"
+    tools:context=".adminform.fragments.FamilyPlanningFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/form_header_item"
+            android:id="@+id/header_side_a_fp_form"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_200sdp"
+            tools:listitem="@layout/form_reyclerview_item"
+            app:layout_constraintTop_toBottomOf="@+id/header_side_a_fp_form"
+            app:layout_constraintStart_toStartOf="@+id/header_side_a_fp_form"
+            app:layout_constraintEnd_toEndOf="@+id/header_side_a_fp_form"
+            android:id="@+id/recyclerview_fp_fragment"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_fp_record_button"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/main_color"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:tint="@color/background__"
+            app:layout_constraintBottom_toTopOf="@+id/existing_patient_fp_record_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/add"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/existing_patient_fp_record_button"
+            android:src="@drawable/ic_exissting_patient"
+            app:backgroundTint="@color/secondary_text__"
+            app:tint="@color/background__"
+            android:layout_marginBottom="@dimen/_55sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/add"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:indeterminateTint="@color/main_color"
+            app:layout_constraintTop_toTopOf="@id/recyclerview_fp_fragment"
+            app:layout_constraintEnd_toEndOf="@id/recyclerview_fp_fragment"
+            app:layout_constraintStart_toStartOf="@id/recyclerview_fp_fragment"
+            app:layout_constraintBottom_toBottomOf="@id/recyclerview_fp_fragment"
+            android:id="@+id/progress_bar_side_a_fp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_records_found_please_click_the_add_icon_to_add_new_record"
+            app:layout_constraintTop_toTopOf="@id/recyclerview_fp_fragment"
+            app:layout_constraintEnd_toEndOf="@id/recyclerview_fp_fragment"
+            app:layout_constraintStart_toStartOf="@id/recyclerview_fp_fragment"
+            app:layout_constraintBottom_toBottomOf="@id/recyclerview_fp_fragment"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:id="@+id/no_record_found_side_a_fp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_fp_fragment"
+            app:layout_constraintStart_toStartOf="@+id/recyclerview_fp_fragment"
+            android:text="@string/side_b"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/secondary_text__"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/side_b_header_label_fp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/side_b_header_label_fp"
+            app:layout_constraintBottom_toBottomOf="@+id/side_b_header_label_fp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/add_more"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/main_color"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:id="@+id/add_more_header_label_fp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_200sdp"
+            app:layout_constraintTop_toBottomOf="@+id/side_b_header_label_fp"
+            app:layout_constraintStart_toStartOf="@+id/side_b_header_label_fp"
+            app:layout_constraintEnd_toEndOf="@+id/add_more_header_label_fp"
+            android:id="@+id/recyclerview_side_b_fp_fragment"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:indeterminateTint="@color/main_color"
+            app:layout_constraintTop_toTopOf="@id/recyclerview_side_b_fp_fragment"
+            app:layout_constraintEnd_toEndOf="@id/recyclerview_side_b_fp_fragment"
+            app:layout_constraintStart_toStartOf="@id/recyclerview_side_b_fp_fragment"
+            app:layout_constraintBottom_toBottomOf="@id/recyclerview_side_b_fp_fragment"
+            android:id="@+id/progress_bar_side_b_fp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_record_found_please_click_add_more_to_create_new_record"
+            app:layout_constraintTop_toTopOf="@id/recyclerview_side_b_fp_fragment"
+            app:layout_constraintEnd_toEndOf="@id/recyclerview_side_b_fp_fragment"
+            app:layout_constraintStart_toStartOf="@id/recyclerview_side_b_fp_fragment"
+            app:layout_constraintBottom_toBottomOf="@id/recyclerview_side_b_fp_fragment"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:id="@+id/no_record_found_side_b_fp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
