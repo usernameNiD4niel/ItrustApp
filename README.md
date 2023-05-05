@@ -6,7 +6,7 @@
 - Because of this project I received an award being a `Senior Software Developer` and lead our thesis to be the best thesis of the year.
 
 # Contact
-- If happen you have a question just [email](reyvillanuevadaniel@gmail.com)
+- If happen you have a question just email me at reyvillanuevadaniel@gmail.com
 - Or if you do have a [facebook](https://www.facebook.com/daniel.rey.9440/) DM me there also
 
 # Installation
